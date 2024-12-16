@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       154,          7]
-NotebookDataLength[      2929,         83]
-NotebookOptionsPosition[      2236,         62]
-NotebookOutlinePosition[      2627,         78]
-CellTagsIndexPosition[      2584,         75]
+NotebookDataLength[      5388,        147]
+NotebookOptionsPosition[      4253,        118]
+NotebookOutlinePosition[      4644,        134]
+CellTagsIndexPosition[      4601,        131]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -30,18 +30,74 @@ Particle Physics\
  TextAlignment->Center,
  FontWeight->"Bold",ExpressionUUID->"5d0df078-a8df-4da9-91b9-3b6de6e8550f"],
 
-Cell["A dynamic and educational notebook for theory", "Subtitle",
- CellFrame->{{0, 0}, {3, 0}},
- CellFrameColor->GrayLevel[0.75],
+Cell[TextData[StyleBox["A dynamic and educational notebook for theory",
+ FontWeight->"Bold",
+ FontSlant->"Italic"]], "Subtitle",
  CellChangeTimes->{3.943364387722052*^9},
  TextAlignment->Center,ExpressionUUID->"cbd75cd5-2620-4213-8659-3c9e47be5523"],
 
+Cell["By Bruno Gehlen F . da Silva", "Author",
+ CellFrame->{{0, 0}, {3, 0}},
+ CellFrameColor->GrayLevel[0.75],
+ CellChangeTimes->{{3.9433670592727013`*^9, 3.943367074476129*^9}},
+ TextAlignment->Right,ExpressionUUID->"120125ac-afbf-4743-aab8-9759053026ae"],
+
 Cell[CellGroupData[{
 
-Cell["Chapter #1: ", "Chapter",
- CellChangeTimes->{{3.9433644255486097`*^9, 
-  3.943364431574581*^9}},ExpressionUUID->"24b2df57-03ed-494c-a0f9-\
+Cell["Chapter #1: Introduction and Theory", "Chapter",
+ CellChangeTimes->{{3.9433644255486097`*^9, 3.943364431574581*^9}, {
+  3.943366068036495*^9, 3.943366072272222*^9}, {3.943366239194881*^9, 
+  3.943366243577133*^9}},ExpressionUUID->"24b2df57-03ed-494c-a0f9-\
 beb39b74c914"],
+
+Cell[CellGroupData[{
+
+Cell["Formalism", "Section",
+ CellChangeTimes->{{3.943366968929351*^9, 
+  3.9433669705305758`*^9}},ExpressionUUID->"3561ba04-af7e-41fe-849d-\
+81630957b85e"],
+
+Cell[TextData[{
+ "We begin by recalling some basic aspects of quantum field theory. After the \
+so-called \[OpenCurlyDoubleQuote]second quantization\[CloseCurlyDoubleQuote], \
+where we establish locality and define that ",
+ StyleBox["n",
+  FontWeight->"Bold",
+  FontSlant->"Italic"],
+ " particles can simultaneously occupy a state of momentum ",
+ StyleBox["p",
+  FontWeight->"Bold",
+  FontSlant->"Italic"],
+ ", resulting from the direct sum of the Hilbert spaces of ",
+ StyleBox["i",
+  FontWeight->"Bold",
+  FontSlant->"Italic"],
+ " particles, also called Fock space:\n\n",
+ Cell[BoxData[
+  FormBox[
+   TemplateBox[<|"boxes" -> FormBox[
+       RowBox[{
+         StyleBox["F", "TI"], "\[AHat]\[Hyphen]\[DoubleDot]"}], 
+       TraditionalForm], "errors" -> {}, "input" -> StringTrim[
+       RowBox[{
+         RowBox[{"\\", "mathbb"}], 
+         RowBox[{"{", "F", "\[LineSeparator]", "}"}]}]], "state" -> "TeX"|>,
+    "TeXAssistantTemplate"], TraditionalForm]],ExpressionUUID->
+  "179ac90c-35b8-482d-8757-590362697b43"],
+ "\n\nand"
+}], "Text",
+ CellChangeTimes->{{3.943366999302339*^9, 3.94336702738035*^9}, {
+  3.943367103830516*^9, 3.943367149112849*^9}},
+ TextJustification->1.,ExpressionUUID->"7391b587-b9e8-4e4c-a648-42fa7c265946"]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Chapter #2: First Computations", "Chapter",
+ CellChangeTimes->{{3.943366251479786*^9, 
+  3.943366277101987*^9}},ExpressionUUID->"c2f4132c-fcbf-4945-8818-\
+f2b490e39cd7"],
 
 Cell["\<\
 It is of paramount importance to expose undergraduate students to cutting - \
@@ -60,7 +116,7 @@ aa92cd089dd4"]
 }, Open  ]]
 }, Open  ]]
 },
-WindowSize->{1023, 550.5},
+WindowSize->{1024.5, 576},
 WindowMargins->{{0, Automatic}, {Automatic, 0}},
 FrontEndVersion->"14.1 for Linux x86 (64-bit) (July 16, 2024)",
 StyleDefinitions->"Default.nb",
@@ -79,10 +135,18 @@ CellTagsIndex->{}
 Notebook[{
 Cell[CellGroupData[{
 Cell[576, 22, 348, 8, 165, "Title",ExpressionUUID->"5d0df078-a8df-4da9-91b9-3b6de6e8550f"],
-Cell[927, 32, 250, 4, 63, "Subtitle",ExpressionUUID->"cbd75cd5-2620-4213-8659-3c9e47be5523"],
+Cell[927, 32, 249, 4, 52, "Subtitle",ExpressionUUID->"cbd75cd5-2620-4213-8659-3c9e47be5523"],
+Cell[1179, 38, 256, 4, 41, "Author",ExpressionUUID->"120125ac-afbf-4743-aab8-9759053026ae"],
 Cell[CellGroupData[{
-Cell[1202, 40, 159, 3, 67, "Chapter",ExpressionUUID->"24b2df57-03ed-494c-a0f9-beb39b74c914"],
-Cell[1364, 45, 844, 13, 121, "Text",ExpressionUUID->"8a74339c-82e8-4e46-bcfa-aa92cd089dd4"]
+Cell[1460, 46, 277, 4, 67, "Chapter",ExpressionUUID->"24b2df57-03ed-494c-a0f9-beb39b74c914"],
+Cell[CellGroupData[{
+Cell[1762, 54, 156, 3, 65, "Section",ExpressionUUID->"3561ba04-af7e-41fe-849d-81630957b85e"],
+Cell[1921, 59, 1233, 31, 173, "Text",ExpressionUUID->"7391b587-b9e8-4e4c-a648-42fa7c265946"]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[3203, 96, 175, 3, 67, "Chapter",ExpressionUUID->"c2f4132c-fcbf-4945-8818-f2b490e39cd7"],
+Cell[3381, 101, 844, 13, 121, "Text",ExpressionUUID->"8a74339c-82e8-4e46-bcfa-aa92cd089dd4"]
 }, Open  ]]
 }, Open  ]]
 }
