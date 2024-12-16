@@ -1,0 +1,91 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Wolfram 14.1' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       154,          7]
+NotebookDataLength[      2929,         83]
+NotebookOptionsPosition[      2236,         62]
+NotebookOutlinePosition[      2627,         78]
+CellTagsIndexPosition[      2584,         75]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell["\<\
+Mathematica Demonstrations in an introduction to Quantum Field Theory and \
+Particle Physics\
+\>", "Title",
+ CellFrame->{{0, 0}, {0.5, 0}},
+ CellFrameColor->GrayLevel[0.75],
+ CellChangeTimes->{{3.943360756439721*^9, 3.94336076155383*^9}},
+ TextAlignment->Center,
+ FontWeight->"Bold",ExpressionUUID->"5d0df078-a8df-4da9-91b9-3b6de6e8550f"],
+
+Cell["A dynamic and educational notebook for theory", "Subtitle",
+ CellFrame->{{0, 0}, {3, 0}},
+ CellFrameColor->GrayLevel[0.75],
+ CellChangeTimes->{3.943364387722052*^9},
+ TextAlignment->Center,ExpressionUUID->"cbd75cd5-2620-4213-8659-3c9e47be5523"],
+
+Cell[CellGroupData[{
+
+Cell["Chapter #1: ", "Chapter",
+ CellChangeTimes->{{3.9433644255486097`*^9, 
+  3.943364431574581*^9}},ExpressionUUID->"24b2df57-03ed-494c-a0f9-\
+beb39b74c914"],
+
+Cell["\<\
+It is of paramount importance to expose undergraduate students to cutting - \
+edge physics topics as soon as they have the capacity to grasp them . In this \
+project, our aim is to enhance candidates' education by delving into \
+introductory texts on Particle Physics and Field Theory . In addition to the \
+usual approach of reading books and presentations, we will complement it with \
+the creation of Mathematica programs that will perform relevant calculations \
+for this study . These programs will not only facilitate simulations and \
+demonstrations, offering candidates a deeper understanding of the subject, \
+but will also be made available to other students or the general public .\
+\>", "Text",
+ CellChangeTimes->{{3.9433608562962017`*^9, 
+  3.943360861176344*^9}},ExpressionUUID->"8a74339c-82e8-4e46-bcfa-\
+aa92cd089dd4"]
+}, Open  ]]
+}, Open  ]]
+},
+WindowSize->{1023, 550.5},
+WindowMargins->{{0, Automatic}, {Automatic, 0}},
+FrontEndVersion->"14.1 for Linux x86 (64-bit) (July 16, 2024)",
+StyleDefinitions->"Default.nb",
+ExpressionUUID->"d750b3b4-0e31-42b2-a00e-c06cd9650be9"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[576, 22, 348, 8, 165, "Title",ExpressionUUID->"5d0df078-a8df-4da9-91b9-3b6de6e8550f"],
+Cell[927, 32, 250, 4, 63, "Subtitle",ExpressionUUID->"cbd75cd5-2620-4213-8659-3c9e47be5523"],
+Cell[CellGroupData[{
+Cell[1202, 40, 159, 3, 67, "Chapter",ExpressionUUID->"24b2df57-03ed-494c-a0f9-beb39b74c914"],
+Cell[1364, 45, 844, 13, 121, "Text",ExpressionUUID->"8a74339c-82e8-4e46-bcfa-aa92cd089dd4"]
+}, Open  ]]
+}, Open  ]]
+}
+]
+*)
+
