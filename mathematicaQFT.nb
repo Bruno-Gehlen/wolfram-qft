@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       154,          7]
-NotebookDataLength[      5388,        147]
-NotebookOptionsPosition[      4253,        118]
-NotebookOutlinePosition[      4644,        134]
-CellTagsIndexPosition[      4601,        131]
+NotebookDataLength[      7973,        200]
+NotebookOptionsPosition[      6397,        163]
+NotebookOutlinePosition[      6788,        179]
+CellTagsIndexPosition[      6745,        176]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -30,21 +30,24 @@ Particle Physics\
  TextAlignment->Center,
  FontWeight->"Bold",ExpressionUUID->"5d0df078-a8df-4da9-91b9-3b6de6e8550f"],
 
-Cell[TextData[StyleBox["A dynamic and educational notebook for theory",
+Cell[TextData[StyleBox["A dynamic and educational notebook for QFT",
  FontWeight->"Bold",
  FontSlant->"Italic"]], "Subtitle",
- CellChangeTimes->{3.943364387722052*^9},
+ CellChangeTimes->{
+  3.943364387722052*^9, {3.943370810424852*^9, 3.9433708108060017`*^9}},
  TextAlignment->Center,ExpressionUUID->"cbd75cd5-2620-4213-8659-3c9e47be5523"],
 
-Cell["By Bruno Gehlen F . da Silva", "Author",
- CellFrame->{{0, 0}, {3, 0}},
- CellFrameColor->GrayLevel[0.75],
- CellChangeTimes->{{3.9433670592727013`*^9, 3.943367074476129*^9}},
+Cell[TextData[StyleBox["By Bruno Gehlen F . da Silva",
+ FontSize->14]], "Author",
+ CellChangeTimes->{{3.9433670592727013`*^9, 3.943367074476129*^9}, {
+  3.943367778769953*^9, 3.943367780471335*^9}},
  TextAlignment->Right,ExpressionUUID->"120125ac-afbf-4743-aab8-9759053026ae"],
 
 Cell[CellGroupData[{
 
 Cell["Chapter #1: Introduction and Theory", "Chapter",
+ CellFrame->{{0, 0}, {0, 3}},
+ CellFrameColor->GrayLevel[0.75],
  CellChangeTimes->{{3.9433644255486097`*^9, 3.943364431574581*^9}, {
   3.943366068036495*^9, 3.943366072272222*^9}, {3.943366239194881*^9, 
   3.943366243577133*^9}},ExpressionUUID->"24b2df57-03ed-494c-a0f9-\
@@ -52,10 +55,51 @@ beb39b74c914"],
 
 Cell[CellGroupData[{
 
+Cell["Historical background", "Section",
+ CellChangeTimes->{
+  3.9433692486882553`*^9},ExpressionUUID->"65b95fd4-088d-465a-8463-\
+6f46b253a928"],
+
+Cell["\<\
+The 20th century had its beginning marked by the great discovery of quantum \
+physics by Max Planck and his studies of the quantization of matter and the \
+Black Body, as we could now describe various oscillations of different modes \
+trapped in a cavity (explains the Ultraviolet Catastrophe). Albert Einstein \
+interpreted this quantization as massless particles called photons and used \
+the new discoveries to find his Coefficients, in addition to the famous \
+Photoelectric Effect. With this new formalism we can use the Annihilation and \
+Creation operators on energy (momentum) modes and even find the Transition \
+Rate between these states.
+
+In the same century, we also had enormous advances in the area of relativity: \
+we do not have an absolute frame of reference, light travels at a constant \
+speed, and depending on the observer\[CloseCurlyQuote]s velocity, they may \
+measure different physical quantities. We found Lorentz invariant observables \
+(symmetrical by the entire Lorentz Group), since it was already known that \
+rotations left norms unchanged, and now we had the Lorentz Boosts. We also \
+discovered that these boosts reduce to Galileo\[CloseCurlyQuote]s at low \
+energies (still validating traditional classical physics), and now we had \
+objects like fields or operators invariant under all these transformations, \
+whether continuous or discrete.\
+\>", "Text",
+ CellChangeTimes->{{3.94336925103164*^9, 3.943369257507009*^9}, {
+   3.9433702273738413`*^9, 3.943370229503652*^9}, 3.943370445303356*^9, {
+   3.9433706023002577`*^9, 
+   3.943370609636723*^9}},ExpressionUUID->"267adee1-7536-4a91-96a6-\
+ca508b013202"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
 Cell["Formalism", "Section",
  CellChangeTimes->{{3.943366968929351*^9, 
   3.9433669705305758`*^9}},ExpressionUUID->"3561ba04-af7e-41fe-849d-\
 81630957b85e"],
+
+Cell["", "Text",
+ CellChangeTimes->{{3.943370651929491*^9, 
+  3.943370675426572*^9}},ExpressionUUID->"c8cfbc18-8d17-43ad-a8e0-\
+b0788be6d98c"],
 
 Cell[TextData[{
  "We begin by recalling some basic aspects of quantum field theory. After the \
@@ -72,32 +116,32 @@ where we establish locality and define that ",
  StyleBox["i",
   FontWeight->"Bold",
   FontSlant->"Italic"],
- " particles, also called Fock space:\n\n",
- Cell[BoxData[
-  FormBox[
-   TemplateBox[<|"boxes" -> FormBox[
-       RowBox[{
-         StyleBox["F", "TI"], "\[AHat]\[Hyphen]\[DoubleDot]"}], 
-       TraditionalForm], "errors" -> {}, "input" -> StringTrim[
-       RowBox[{
-         RowBox[{"\\", "mathbb"}], 
-         RowBox[{"{", "F", "\[LineSeparator]", "}"}]}]], "state" -> "TeX"|>,
-    "TeXAssistantTemplate"], TraditionalForm]],ExpressionUUID->
-  "179ac90c-35b8-482d-8757-590362697b43"],
- "\n\nand"
+ " particles, also called Fock space:\n\n\n\nand"
 }], "Text",
  CellChangeTimes->{{3.943366999302339*^9, 3.94336702738035*^9}, {
-  3.943367103830516*^9, 3.943367149112849*^9}},
+   3.943367103830516*^9, 3.943367149112849*^9}, 3.943367240778721*^9, {
+   3.9433672818423986`*^9, 3.94336730996591*^9}, {3.943367372081882*^9, 
+   3.943367457410123*^9}, {3.943367791236668*^9, 3.943367808215314*^9}},
  TextJustification->1.,ExpressionUUID->"7391b587-b9e8-4e4c-a648-42fa7c265946"]
 }, Open  ]]
 }, Open  ]],
 
 Cell[CellGroupData[{
 
-Cell["Chapter #2: First Computations", "Chapter",
- CellChangeTimes->{{3.943366251479786*^9, 
-  3.943366277101987*^9}},ExpressionUUID->"c2f4132c-fcbf-4945-8818-\
+Cell["Chapter #2: Computing", "Chapter",
+ CellFrame->{{0, 0}, {0, 3}},
+ CellFrameColor->GrayLevel[0.75],
+ CellChangeTimes->{{3.943366251479786*^9, 3.943366277101987*^9}, {
+  3.943371759656824*^9, 
+  3.9433717622257338`*^9}},ExpressionUUID->"c2f4132c-fcbf-4945-8818-\
 f2b490e39cd7"],
+
+Cell[CellGroupData[{
+
+Cell["First Computations", "Section",
+ CellChangeTimes->{{3.9433717537398233`*^9, 
+  3.943371756849701*^9}},ExpressionUUID->"bd9c4a48-ac6f-4462-8274-\
+3bc0cf24e4a5"],
 
 Cell["\<\
 It is of paramount importance to expose undergraduate students to cutting - \
@@ -113,6 +157,7 @@ but will also be made available to other students or the general public .\
  CellChangeTimes->{{3.9433608562962017`*^9, 
   3.943360861176344*^9}},ExpressionUUID->"8a74339c-82e8-4e46-bcfa-\
 aa92cd089dd4"]
+}, Open  ]]
 }, Open  ]]
 }, Open  ]]
 },
@@ -135,18 +180,26 @@ CellTagsIndex->{}
 Notebook[{
 Cell[CellGroupData[{
 Cell[576, 22, 348, 8, 165, "Title",ExpressionUUID->"5d0df078-a8df-4da9-91b9-3b6de6e8550f"],
-Cell[927, 32, 249, 4, 52, "Subtitle",ExpressionUUID->"cbd75cd5-2620-4213-8659-3c9e47be5523"],
-Cell[1179, 38, 256, 4, 41, "Author",ExpressionUUID->"120125ac-afbf-4743-aab8-9759053026ae"],
+Cell[927, 32, 297, 5, 52, "Subtitle",ExpressionUUID->"cbd75cd5-2620-4213-8659-3c9e47be5523"],
+Cell[1227, 39, 276, 4, 25, "Author",ExpressionUUID->"120125ac-afbf-4743-aab8-9759053026ae"],
 Cell[CellGroupData[{
-Cell[1460, 46, 277, 4, 67, "Chapter",ExpressionUUID->"24b2df57-03ed-494c-a0f9-beb39b74c914"],
+Cell[1528, 47, 341, 6, 78, "Chapter",ExpressionUUID->"24b2df57-03ed-494c-a0f9-beb39b74c914"],
 Cell[CellGroupData[{
-Cell[1762, 54, 156, 3, 65, "Section",ExpressionUUID->"3561ba04-af7e-41fe-849d-81630957b85e"],
-Cell[1921, 59, 1233, 31, 173, "Text",ExpressionUUID->"7391b587-b9e8-4e4c-a648-42fa7c265946"]
+Cell[1894, 57, 144, 3, 65, "Section",ExpressionUUID->"65b95fd4-088d-465a-8463-6f46b253a928"],
+Cell[2041, 62, 1654, 26, 252, "Text",ExpressionUUID->"267adee1-7536-4a91-96a6-ca508b013202"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[3732, 93, 156, 3, 65, "Section",ExpressionUUID->"3561ba04-af7e-41fe-849d-81630957b85e"],
+Cell[3891, 98, 142, 3, 33, "Text",ExpressionUUID->"c8cfbc18-8d17-43ad-a8e0-b0788be6d98c"],
+Cell[4036, 103, 954, 21, 164, "Text",ExpressionUUID->"7391b587-b9e8-4e4c-a648-42fa7c265946"]
 }, Open  ]]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[3203, 96, 175, 3, 67, "Chapter",ExpressionUUID->"c2f4132c-fcbf-4945-8818-f2b490e39cd7"],
-Cell[3381, 101, 844, 13, 121, "Text",ExpressionUUID->"8a74339c-82e8-4e46-bcfa-aa92cd089dd4"]
+Cell[5039, 130, 281, 6, 78, "Chapter",ExpressionUUID->"c2f4132c-fcbf-4945-8818-f2b490e39cd7"],
+Cell[CellGroupData[{
+Cell[5345, 140, 165, 3, 65, "Section",ExpressionUUID->"bd9c4a48-ac6f-4462-8274-3bc0cf24e4a5"],
+Cell[5513, 145, 844, 13, 121, "Text",ExpressionUUID->"8a74339c-82e8-4e46-bcfa-aa92cd089dd4"]
+}, Open  ]]
 }, Open  ]]
 }, Open  ]]
 }
