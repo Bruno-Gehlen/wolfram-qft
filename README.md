@@ -4,7 +4,7 @@ This repository contains Wolfram Mathematica code developed during a research pr
 
 **Repository Contents:**
 
-* **Mathematica Programs:** Notebooks containing code for calculations, simulations, and demonstrations of key concepts in Particle Physics and Quantum Field Theory.
+* **Mathematica Programs:** Notebooks containing code for calculations, simulations, and demonstrations of key concepts in Particle Physics and Quantum Field Theory. My authorial program is called *"wolfrDemoQFT.nb"*, and there are also some inspirations (the other three programs).
 * **Documentation:** Detailed descriptions of each program, including usage instructions, explanations of the physical concepts addressed, and application examples.
 * **Additional Resources:** Links to supporting materials such as books, articles, and presentations that complement learning.
 
