@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       154,          7]
-NotebookDataLength[     88025,       1545]
-NotebookOptionsPosition[     85645,       1497]
-NotebookOutlinePosition[     86263,       1518]
-CellTagsIndexPosition[     86220,       1515]
+NotebookDataLength[     83771,       1472]
+NotebookOptionsPosition[     81625,       1429]
+NotebookOutlinePosition[     82016,       1445]
+CellTagsIndexPosition[     81973,       1442]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -21,125 +21,106 @@ Notebook[{
 
 Cell[CellGroupData[{
 Cell["\<\
-Demonstra\[CCedilla]\[OTilde]es no Mathematica em uma Introdu\[CCedilla]\
-\[ATilde]o \[AGrave] Teoria Qu\[AHat]ntica de Campos e F\[IAcute]sica de Part\
-\[IAcute]culas\
+Mathematica Demonstrations in an introduction to Quantum Field Theory and \
+Particle Physics\
 \>", "Title",
  CellFrame->{{0, 0}, {0.5, 0}},
  CellFrameColor->GrayLevel[0.75],
- CellChangeTimes->{{3.943360756439721*^9, 3.94336076155383*^9}, 
-   3.94519666482407*^9},
+ CellChangeTimes->{{3.943360756439721*^9, 3.94336076155383*^9}},
  TextAlignment->Center,
  FontWeight->"Bold",ExpressionUUID->"5d0df078-a8df-4da9-91b9-3b6de6e8550f"],
 
-Cell[TextData[StyleBox["Um notebook din\[AHat]mico e educacional para TQC",
+Cell[TextData[StyleBox["A dynamic and educational notebook for QFT",
  FontWeight->"Bold",
  FontSlant->"Italic"]], "Subtitle",
  CellChangeTimes->{
-  3.943364387722052*^9, {3.943370810424852*^9, 3.9433708108060017`*^9}, 
-   3.945196671936759*^9},
+  3.943364387722052*^9, {3.943370810424852*^9, 3.9433708108060017`*^9}},
  TextAlignment->Center,ExpressionUUID->"cbd75cd5-2620-4213-8659-3c9e47be5523"],
 
-Cell[TextData[StyleBox["Por Bruno Gehlen F . da Silva",
+Cell[TextData[StyleBox["By Bruno Gehlen F . da Silva",
  FontSize->14]], "Author",
  CellChangeTimes->{{3.9433670592727013`*^9, 3.943367074476129*^9}, {
-  3.943367778769953*^9, 3.943367780471335*^9}, {3.945196675704467*^9, 
-  3.945196676707614*^9}},
+  3.943367778769953*^9, 3.943367780471335*^9}},
  TextAlignment->Right,ExpressionUUID->"120125ac-afbf-4743-aab8-9759053026ae"],
 
 Cell[CellGroupData[{
 
-Cell[TextData[StyleBox["Cap\[IAcute]tulo #1: Introdu\[CCedilla]\[ATilde]o e \
-Teoria",
- FontWeight->"Bold"]], "Chapter",
+Cell["Chapter #1: Introduction and Theory", "Chapter",
  CellFrame->{{0, 0}, {0, 3}},
  CellFrameColor->GrayLevel[0.75],
  CellChangeTimes->{{3.9433644255486097`*^9, 3.943364431574581*^9}, {
   3.943366068036495*^9, 3.943366072272222*^9}, {3.943366239194881*^9, 
-  3.943366243577133*^9}, {3.945196682483478*^9, 
-  3.945196695067491*^9}},ExpressionUUID->"24b2df57-03ed-494c-a0f9-\
+  3.943366243577133*^9}},ExpressionUUID->"24b2df57-03ed-494c-a0f9-\
 beb39b74c914"],
 
 Cell[CellGroupData[{
 
-Cell["Contexto Hist\[OAcute]rico", "Section",
+Cell["Historical background", "Section",
  CellChangeTimes->{
-  3.9433692486882553`*^9, {3.945196699474818*^9, 
-   3.945196702824272*^9}},ExpressionUUID->"65b95fd4-088d-465a-8463-\
+  3.9433692486882553`*^9},ExpressionUUID->"65b95fd4-088d-465a-8463-\
 6f46b253a928"],
 
 Cell["\<\
-\tO s\[EAcute]culo XX come\[CCedilla]ou com a grande descoberta da \
-f\[IAcute]sica qu\[AHat]ntica por Max Planck e seus estudos sobre a quantiza\
-\[CCedilla]\[ATilde]o da mat\[EAcute]ria e o Corpo Negro, permitindo \
-descrever v\[AAcute]rias oscila\[CCedilla]\[OTilde]es de diferentes modos \
-confinados em uma cavidade (explicando a Cat\[AAcute]strofe do Ultravioleta). \
-Albert Einstein interpretou essa quantiza\[CCedilla]\[ATilde]o como part\
-\[IAcute]culas sem massa chamadas f\[OAcute]tons e utilizou essas novas \
-descobertas para determinar seus Coeficientes, al\[EAcute]m do famoso Efeito \
-Fotoel\[EAcute]trico. Com este novo formalismo, podemos usar os operadores de \
-Aniquila\[CCedilla]\[ATilde]o e Cria\[CCedilla]\[ATilde]o em modos de energia \
-(ou momento) e at\[EAcute] mesmo encontrar a Taxa de Transi\[CCedilla]\
-\[ATilde]o entre esses estados.\
+\tThe 20th century had its beginning marked by the great discovery of quantum \
+physics by Max Planck and his studies of the quantization of matter and the \
+Black Body, as we could now describe various oscillations of different modes \
+trapped in a cavity (explains the Ultraviolet Catastrophe). Albert Einstein \
+interpreted this quantization as massless particles called photons and used \
+the new discoveries to find his Coefficients, in addition to the famous \
+Photoelectric Effect. With this new formalism we can use the Annihilation and \
+Creation operators on energy (momentum) modes and even find the Transition \
+Rate between these states.\
 \>", "Text",
  CellChangeTimes->{{3.94336925103164*^9, 3.943369257507009*^9}, {
    3.9433702273738413`*^9, 3.943370229503652*^9}, 3.943370445303356*^9, {
    3.9433706023002577`*^9, 3.943370609636723*^9}, {3.943438371013134*^9, 
-   3.943438372683576*^9}, 3.9451948723463497`*^9, 3.9451967118255253`*^9, 
-   3.9451974467210913`*^9},ExpressionUUID->"267adee1-7536-4a91-96a6-\
+   3.943438372683576*^9}, 
+   3.9451948723463497`*^9},ExpressionUUID->"267adee1-7536-4a91-96a6-\
 ca508b013202"],
 
 Cell["\<\
-\tNo mesmo s\[EAcute]culo, tamb\[EAcute]m houve enormes avan\[CCedilla]os na \
-\[AAcute]rea da relatividade: n\[ATilde]o h\[AAcute] um referencial absoluto, \
-a luz viaja a uma velocidade constante e, dependendo da velocidade do \
-observador, diferentes grandezas f\[IAcute]sicas podem ser medidas. \
-Descobriram-se observ\[AAcute]veis invariantes de Lorentz (sim\[EAcute]tricos \
-por todo o Grupo de Lorentz), pois j\[AAcute] se sabia que rota\[CCedilla]\
-\[OTilde]es mantinham normas inalteradas, e agora t\[IAcute]nhamos os Boosts \
-de Lorentz. Tamb\[EAcute]m foi descoberto que esses boosts se reduzem aos de \
-Galileu em baixas energias (validando ainda a f\[IAcute]sica cl\[AAcute]ssica \
-tradicional), e passamos a lidar com objetos como campos ou operadores \
-invariantes sob todas essas transforma\[CCedilla]\[OTilde]es, sejam cont\
-\[IAcute]nuas ou discretas.\
+\tIn the same century, we also had enormous advances in the area of \
+relativity: we do not have an absolute frame of reference, light travels at a \
+constant speed, and depending on the observer\[CloseCurlyQuote]s velocity, \
+they may measure different physical quantities. We found Lorentz invariant \
+observables (symmetrical by the entire Lorentz Group), since it was already \
+known that rotations left norms unchanged, and now we had the Lorentz Boosts. \
+We also discovered that these boosts reduce to Galileo\[CloseCurlyQuote]s at \
+low energies (still validating traditional classical physics), and now we had \
+objects like fields or operators invariant under all these transformations, \
+whether continuous or discrete.\
 \>", "Text",
- CellChangeTimes->{
-  3.943438379026802*^9, 3.945194870420659*^9, {3.9451967225293217`*^9, 
-   3.9451967229584503`*^9}},ExpressionUUID->"80ec82e1-1da3-429b-8006-\
+ CellChangeTimes->{3.943438379026802*^9, 
+  3.945194870420659*^9},ExpressionUUID->"80ec82e1-1da3-429b-8006-\
 b5aa94139ef6"],
 
-Cell["\tHoje em dia,", "Text",
+Cell["\tNowadays,", "Text",
  CellChangeTimes->{{3.943438510900124*^9, 3.943438527402483*^9}, 
-   3.945194874203877*^9, {3.945196726309174*^9, 
-   3.945196729997548*^9}},ExpressionUUID->"bf0a8864-06e8-49e7-8b0c-\
+   3.945194874203877*^9},ExpressionUUID->"bf0a8864-06e8-49e7-8b0c-\
 90d16218aaf0"]
 }, Open  ]],
 
 Cell[CellGroupData[{
 
-Cell["Formalismo R\[AAcute]pido", "Section",
+Cell["Quick Formalism", "Section",
  CellChangeTimes->{{3.943366968929351*^9, 3.9433669705305758`*^9}, {
-  3.945194848066821*^9, 3.9451948487346478`*^9}, {3.945196738585181*^9, 
-  3.945196740587214*^9}},ExpressionUUID->"3561ba04-af7e-41fe-849d-\
+  3.945194848066821*^9, 
+  3.9451948487346478`*^9}},ExpressionUUID->"3561ba04-af7e-41fe-849d-\
 81630957b85e"],
 
-Cell["\tTomando a solu\[CCedilla]\[ATilde]o cl\[AAcute]ssica de onda", "Text",
+Cell["\tTaking the classical wave solution", "Text",
  CellChangeTimes->{{3.943370651929491*^9, 3.943370675426572*^9}, {
-   3.943378151691581*^9, 3.9433781561149073`*^9}, 3.9451948607101803`*^9, {
-   3.9451967491811457`*^9, 
-   3.9451967498477373`*^9}},ExpressionUUID->"c8cfbc18-8d17-43ad-a8e0-\
+   3.943378151691581*^9, 3.9433781561149073`*^9}, 
+   3.9451948607101803`*^9},ExpressionUUID->"c8cfbc18-8d17-43ad-a8e0-\
 b0788be6d98c"],
 
 Cell["\<\
-\tFalando propriamente sobre nossa teoria, \[EAcute] necess\[AAcute]rio \
-lembrar alguns aspectos b\[AAcute]sicos da Teoria Qu\[AHat]ntica de Campos. \
-Ap\[OAcute]s a chamada \[OpenCurlyDoubleQuote]segunda quantiza\[CCedilla]\
-\[ATilde]o\[CloseCurlyDoubleQuote], onde estabelecemos rela\[CCedilla]\
-\[OTilde]es de comuta\[CCedilla]\[ATilde]o locais (em tempos iguais) entre \
-nossos operadores de cria\[CCedilla]\[ATilde]o/aniquila\[CCedilla]\[ATilde]o \
-e a normaliza\[CCedilla]\[ATilde]o dos estados, tamb\[EAcute]m considerando a \
-a\[CCedilla]\[ATilde]o desses operadores em um estado de uma \
-part\[IAcute]cula:\
+\tTalking properly about our theory, we must recalling some basic aspects of \
+Quantum Field Theory. After the so-called \[OpenCurlyDoubleQuote]second \
+quantization\[CloseCurlyDoubleQuote], where we establish local (equal-time) \
+commutation relations between the our creation/annihilation operators and \
+normalization of states, also having in mind the action of those operators on \
+a one-particle state:\
 \>", "Text",
  CellChangeTimes->{{3.943366999302339*^9, 3.94336702738035*^9}, {
    3.943367103830516*^9, 3.943367149112849*^9}, 3.943367240778721*^9, {
@@ -147,7 +128,7 @@ part\[IAcute]cula:\
    3.943367457410123*^9}, {3.943367791236668*^9, 3.943367808215314*^9}, {
    3.943438205269706*^9, 3.943438225003501*^9}, {3.9434393474592524`*^9, 
    3.9434394927873707`*^9}, {3.943439687890579*^9, 3.943439808587431*^9}, 
-   3.945194862880582*^9, 3.945196760926836*^9},
+   3.945194862880582*^9},
  TextJustification->1.,ExpressionUUID->"7391b587-b9e8-4e4c-a648-42fa7c265946"],
 
 Cell[BoxData[
@@ -322,25 +303,24 @@ usOgjOgJERMl4Q5lNOrnCUiU7FAUjUAgEAgEAoFAIF4l/wDy2RTu
  TextAlignment->Center,ExpressionUUID->"742adce4-a4b4-476d-80ca-74e25c90122d"],
 
 Cell[TextData[{
- "Definimos que ",
+ "and define that ",
  StyleBox["n",
   FontWeight->"Bold",
   FontSlant->"Italic"],
- " part\[IAcute]culas podem simultaneamente ocupar um estado de momento ",
+ " particles can simultaneously occupy a state of momentum ",
  StyleBox["p",
   FontWeight->"Bold",
   FontSlant->"Italic"],
- ", resultando na soma direta dos espa\[CCedilla]os de Hilbert das ",
+ ", resulting from the direct sum of the Hilbert spaces of ",
  StyleBox["i",
   FontWeight->"Bold",
   FontSlant->"Italic"],
- " part\[IAcute]culas, tamb\[EAcute]m chamado de espa\[CCedilla]o de Fock, \
-permitindo agora a introdu\[CCedilla]\[ATilde]o de Campos Escalares \
-Qu\[AHat]nticos:"
+ " particles, also called Fock space, and we can have now Quantum Scalar \
+Fields:"
 }], "Text",
  CellChangeTimes->{{3.9434394836086273`*^9, 3.9434394883718576`*^9}, {
-  3.943442180198085*^9, 3.9434421911140947`*^9}, {3.9451967687572308`*^9, 
-  3.945196787027113*^9}},ExpressionUUID->"6b873741-2a8d-403c-a437-\
+  3.943442180198085*^9, 
+  3.9434421911140947`*^9}},ExpressionUUID->"6b873741-2a8d-403c-a437-\
 42e90600cc4f"],
 
 Cell[BoxData[
@@ -1412,84 +1392,36 @@ CfU/vYHnsQ==
    3.943442070954129*^9}},
  TextAlignment->Center,ExpressionUUID->"668cd8e0-3687-4fdd-9bca-6fb8c510bbeb"],
 
-Cell["e assim eles podem ser vistos como...", "Text",
+Cell["and so they can be seen as", "Text",
  CellChangeTimes->{{3.943438257251183*^9, 3.9434382648965263`*^9}, {
    3.943439262855503*^9, 3.943439263959011*^9}, 3.943439337493855*^9, {
    3.943439652635754*^9, 3.943439653052279*^9}, {3.9451933468422737`*^9, 
-   3.945193352536838*^9}, {3.9451967968198833`*^9, 3.945196797953485*^9}, {
-   3.9451970433225117`*^9, 
-   3.9451970443711023`*^9}},ExpressionUUID->"73a005ed-76e3-4b39-b62d-\
+   3.945193352536838*^9}},ExpressionUUID->"73a005ed-76e3-4b39-b62d-\
 5e0543a7e12b"]
 }, Open  ]]
 }, Open  ]],
 
 Cell[CellGroupData[{
 
-Cell[TextData[StyleBox["Cap\[IAcute]tulo #2: C\[AAcute]lculos",
- FontWeight->"Bold"]], "Chapter",
+Cell["Chapter #2: Computing", "Chapter",
  CellFrame->{{0, 0}, {0, 3}},
  CellFrameColor->GrayLevel[0.75],
  CellChangeTimes->{{3.943366251479786*^9, 3.943366277101987*^9}, {
-  3.943371759656824*^9, 3.9433717622257338`*^9}, {3.945196802136424*^9, 
-  3.945196808841585*^9}},ExpressionUUID->"c2f4132c-fcbf-4945-8818-\
+  3.943371759656824*^9, 
+  3.9433717622257338`*^9}},ExpressionUUID->"c2f4132c-fcbf-4945-8818-\
 f2b490e39cd7"],
 
 Cell[CellGroupData[{
 
-Cell["Primeiros C\[AAcute]lculos", "Section",
- CellChangeTimes->{{3.9433717537398233`*^9, 3.943371756849701*^9}, {
-  3.9451968164352503`*^9, 
-  3.945196819111361*^9}},ExpressionUUID->"bd9c4a48-ac6f-4462-8274-\
+Cell["First Computations", "Section",
+ CellChangeTimes->{{3.9433717537398233`*^9, 
+  3.943371756849701*^9}},ExpressionUUID->"bd9c4a48-ac6f-4462-8274-\
 3bc0cf24e4a5"],
 
-Cell[TextData[{
- "\tAgora, vamos iniciar os c\[AAcute]lculos de alguns espalhamentos j\
-\[AAcute] conhecidos para avaliar a autenticidade da teoria descrita at\
-\[EAcute] aqui. Tomando o famoso ",
- StyleBox["Espalhamento de M\[OSlash]ller",
-  FontSlant->"Italic"],
- ", algo extremamente natural na eletrodin\[AHat]mica, onde dois \
-el\[EAcute]trons se aproximam e se repelem ao trocar um f\[OAcute]ton, ",
- Cell[BoxData[
-  GraphicsBox[
-   TagBox[RasterBox[CompressedData["
-1:eJztmE1IVFEUx49akEUUlWRfhJFkGxOUNAKjVdSiaDJqEYLiNBkxwjgWRWoF
-avQJEVEQlVabiigIorTSVYTUuk1I6za1iHbl/8+5IAwzr7l3nm8Q7g9+Mu/x
-5twz9757z8Gq9q7Y0VIR6V6AP7G2UztTqbbTB5bi4mCyuzORjHfsTqbjiXiq
-qb0MN5fBLjhPPB6Px+PxeOY8a+H5HKYtY+0LiLUjpHyLxTbJ/dsOW8Y6ERCr
-OqR8PZ5i0QEbi51ESPTAm3AYthYQZzUcgQPwKawqPLVZoQLesPzOIngLDsEn
-cHsB42+FD+Fl+AAudIixEj6HF2AJnA+nHPPZBb/CGnPdAq84xoqCXtFalQ+1
-8DPcIzpPG+Go47isaZNwibm+KPZ1kXyCY+Zzucnto0OcevhXdL3IOtF93OkQ
-KxclIcv39I7oOxfEcvhLtF8g/PdUSnQP2pIQnaf15roOvoMNlnH4vX/wLbwL
-38NHov2lLbdNrOvwGfwgeg6HBc/giVnwi8k76L0/bp65Dx/DcXhN3M457t0f
-8Cp8Bd/AmEOcFpOT7Zpng3t3MoQ4UbJYtOb8ryZznv/AshDG/Clu+zUT1lqu
-3aqM++y/Si1jcQ5eZrnf5JBXVPCsqMzjOZ4f2XoAl9/GfuBsxj32QFss4/C8
-/yYz5wV7r2OiPZTt2rFOfhetv6wl7KPuwUOWcaJiDbyU57Mb4G/R/oRsgoOw
-z2Hcc/C16B7m/LPWvhD7tSObRfsl9pn98Ijo3LvA+s0zPG1yrAl8urjsF12D
-fNkrWhdOivYszY7jcr3Yw/GcOmNc4RjL4/FEyDQgUH2R
-     "], {{0, 13.498312710911136`}, {83.23959505061868, 0}}, {0, 255},
-     ColorFunction->RGBColor,
-     ImageResolution->{96.012, 96.012},
-     RasterInterpolation->"High"],
-    BoxForm`ImageTag["Byte", ColorSpace -> "RGB", Interleaving -> True],
-    Selectable->False],
-   DefaultBaseStyle->"ImageGraphics",
-   ImageSize->Automatic,
-   ImageSizeRaw->{83.23959505061868, 13.498312710911136`},
-   PlotRange->{{0, 83.23959505061868}, {0, 13.498312710911136`}}]], "Input",
-  ExpressionUUID->"13dbb421-8f85-4024-b468-227dc61ffa71"],
- ". Pela Lagrangiana, nota-se que os diagramas poss\[IAcute]veis s\[ATilde]o \
-o canal t e u"
-}], "Text",
+Cell["\tNow, ", "Text",
  CellChangeTimes->{{3.9433608562962017`*^9, 3.943360861176344*^9}, {
-  3.945194877281617*^9, 3.9451948912866907`*^9}, {3.945196822059737*^9, 
-  3.945196836010889*^9}, {3.945196932657558*^9, 3.945196982186026*^9}, {
-  3.945197047320716*^9, 3.945197081161886*^9}, {3.945197147173366*^9, 
-  3.945197154202964*^9}, {3.945197464985662*^9, 3.9451974713745604`*^9}, {
-  3.9451975148951283`*^9, 3.945197564180298*^9}, {3.9451980340536118`*^9, 
-  3.945198079490687*^9}, {3.945200114176958*^9, 3.945200120238317*^9}, {
-  3.9452002404929457`*^9, 
-  3.945200262216277*^9}},ExpressionUUID->"8a74339c-82e8-4e46-bcfa-\
+  3.945194877281617*^9, 
+  3.9451948912866907`*^9}},ExpressionUUID->"8a74339c-82e8-4e46-bcfa-\
 aa92cd089dd4"]
 }, Open  ]]
 }, Open  ]]
@@ -1497,11 +1429,6 @@ aa92cd089dd4"]
 },
 WindowSize->{1024.5, 576},
 WindowMargins->{{0, Automatic}, {Automatic, 0}},
-PrintingCopies->1,
-PrintingPageRange->{Automatic, Automatic},
-PrintingOptions->{"PaperOrientation"->"Portrait",
-"PaperSize"->{Automatic, Automatic},
-"PostScriptOutputFile"->"/home/brunogehlen/Documentos/wolfram-qft/file.pdf"},
 FrontEndVersion->"14.1 for Linux x86 (64-bit) (July 16, 2024)",
 StyleDefinitions->"Default.nb",
 ExpressionUUID->"d750b3b4-0e31-42b2-a00e-c06cd9650be9"
@@ -1518,32 +1445,32 @@ CellTagsIndex->{}
 (*NotebookFileOutline
 Notebook[{
 Cell[CellGroupData[{
-Cell[576, 22, 448, 10, 226, "Title",ExpressionUUID->"5d0df078-a8df-4da9-91b9-3b6de6e8550f"],
-Cell[1027, 34, 330, 6, 52, "Subtitle",ExpressionUUID->"cbd75cd5-2620-4213-8659-3c9e47be5523"],
-Cell[1360, 42, 326, 5, 25, "Author",ExpressionUUID->"120125ac-afbf-4743-aab8-9759053026ae"],
+Cell[576, 22, 348, 8, 165, "Title",ExpressionUUID->"5d0df078-a8df-4da9-91b9-3b6de6e8550f"],
+Cell[927, 32, 297, 5, 52, "Subtitle",ExpressionUUID->"cbd75cd5-2620-4213-8659-3c9e47be5523"],
+Cell[1227, 39, 276, 4, 25, "Author",ExpressionUUID->"120125ac-afbf-4743-aab8-9759053026ae"],
 Cell[CellGroupData[{
-Cell[1711, 51, 456, 9, 78, "Chapter",ExpressionUUID->"24b2df57-03ed-494c-a0f9-beb39b74c914"],
+Cell[1528, 47, 341, 6, 78, "Chapter",ExpressionUUID->"24b2df57-03ed-494c-a0f9-beb39b74c914"],
 Cell[CellGroupData[{
-Cell[2192, 64, 199, 4, 65, "Section",ExpressionUUID->"65b95fd4-088d-465a-8463-6f46b253a928"],
-Cell[2394, 70, 1262, 19, 121, "Text",ExpressionUUID->"267adee1-7536-4a91-96a6-ca508b013202"],
-Cell[3659, 91, 1071, 17, 143, "Text",ExpressionUUID->"80ec82e1-1da3-429b-8006-b5aa94139ef6"],
-Cell[4733, 110, 229, 4, 33, "Text",ExpressionUUID->"bf0a8864-06e8-49e7-8b0c-90d16218aaf0"]
+Cell[1894, 57, 144, 3, 65, "Section",ExpressionUUID->"65b95fd4-088d-465a-8463-6f46b253a928"],
+Cell[2041, 62, 1000, 16, 121, "Text",ExpressionUUID->"267adee1-7536-4a91-96a6-ca508b013202"],
+Cell[3044, 80, 878, 14, 121, "Text",ExpressionUUID->"80ec82e1-1da3-429b-8006-b5aa94139ef6"],
+Cell[3925, 96, 176, 3, 33, "Text",ExpressionUUID->"bf0a8864-06e8-49e7-8b0c-90d16218aaf0"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[4999, 119, 269, 4, 65, "Section",ExpressionUUID->"3561ba04-af7e-41fe-849d-81630957b85e"],
-Cell[5271, 125, 335, 5, 33, "Text",ExpressionUUID->"c8cfbc18-8d17-43ad-a8e0-b0788be6d98c"],
-Cell[5609, 132, 1201, 18, 77, "Text",ExpressionUUID->"7391b587-b9e8-4e4c-a648-42fa7c265946"],
-Cell[6813, 152, 9702, 169, 61, "Text",ExpressionUUID->"742adce4-a4b4-476d-80ca-74e25c90122d"],
-Cell[16518, 323, 768, 20, 55, "Text",ExpressionUUID->"6b873741-2a8d-403c-a437-42e90600cc4f"],
-Cell[17289, 345, 64602, 1067, 68, "Text",ExpressionUUID->"668cd8e0-3687-4fdd-9bca-6fb8c510bbeb"],
-Cell[81894, 1414, 458, 7, 33, "Text",ExpressionUUID->"73a005ed-76e3-4b39-b62d-5e0543a7e12b"]
+Cell[4138, 104, 213, 4, 65, "Section",ExpressionUUID->"3561ba04-af7e-41fe-849d-81630957b85e"],
+Cell[4354, 110, 255, 4, 33, "Text",ExpressionUUID->"c8cfbc18-8d17-43ad-a8e0-b0788be6d98c"],
+Cell[4612, 116, 971, 15, 77, "Text",ExpressionUUID->"7391b587-b9e8-4e4c-a648-42fa7c265946"],
+Cell[5586, 133, 9702, 169, 61, "Text",ExpressionUUID->"742adce4-a4b4-476d-80ca-74e25c90122d"],
+Cell[15291, 304, 620, 19, 55, "Text",ExpressionUUID->"6b873741-2a8d-403c-a437-42e90600cc4f"],
+Cell[15914, 325, 64602, 1067, 68, "Text",ExpressionUUID->"668cd8e0-3687-4fdd-9bca-6fb8c510bbeb"],
+Cell[80519, 1394, 341, 5, 33, "Text",ExpressionUUID->"73a005ed-76e3-4b39-b62d-5e0543a7e12b"]
 }, Open  ]]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[82401, 1427, 384, 7, 78, "Chapter",ExpressionUUID->"c2f4132c-fcbf-4945-8818-f2b490e39cd7"],
+Cell[80909, 1405, 281, 6, 78, "Chapter",ExpressionUUID->"c2f4132c-fcbf-4945-8818-f2b490e39cd7"],
 Cell[CellGroupData[{
-Cell[82810, 1438, 224, 4, 65, "Section",ExpressionUUID->"bd9c4a48-ac6f-4462-8274-3bc0cf24e4a5"],
-Cell[83037, 1444, 2568, 48, 77, "Text",ExpressionUUID->"8a74339c-82e8-4e46-bcfa-aa92cd089dd4"]
+Cell[81215, 1415, 165, 3, 65, "Section",ExpressionUUID->"bd9c4a48-ac6f-4462-8274-3bc0cf24e4a5"],
+Cell[81383, 1420, 202, 4, 33, "Text",ExpressionUUID->"8a74339c-82e8-4e46-bcfa-aa92cd089dd4"]
 }, Open  ]]
 }, Open  ]]
 }, Open  ]]
