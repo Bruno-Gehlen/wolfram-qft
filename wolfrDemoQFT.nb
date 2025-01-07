@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       154,          7]
-NotebookDataLength[     88025,       1545]
-NotebookOptionsPosition[     85645,       1497]
-NotebookOutlinePosition[     86263,       1518]
-CellTagsIndexPosition[     86220,       1515]
+NotebookDataLength[     90903,       1608]
+NotebookOptionsPosition[     88423,       1559]
+NotebookOutlinePosition[     89041,       1580]
+CellTagsIndexPosition[     88998,       1577]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -69,13 +69,13 @@ Cell["Contexto Hist\[OAcute]rico", "Section",
 6f46b253a928"],
 
 Cell["\<\
-\tO s\[EAcute]culo XX come\[CCedilla]ou com a grande descoberta da \
-f\[IAcute]sica qu\[AHat]ntica por Max Planck e seus estudos sobre a quantiza\
-\[CCedilla]\[ATilde]o da mat\[EAcute]ria e o Corpo Negro, permitindo \
-descrever v\[AAcute]rias oscila\[CCedilla]\[OTilde]es de diferentes modos \
-confinados em uma cavidade (explicando a Cat\[AAcute]strofe do Ultravioleta). \
-Albert Einstein interpretou essa quantiza\[CCedilla]\[ATilde]o como part\
-\[IAcute]culas sem massa chamadas f\[OAcute]tons e utilizou essas novas \
+\tO s\[EAcute]culo XX iniciou com a grande descoberta da f\[IAcute]sica qu\
+\[AHat]ntica por Max Planck e seus estudos sobre a quantiza\[CCedilla]\
+\[ATilde]o da mat\[EAcute]ria e o Corpo Negro, permitindo descrever \
+v\[AAcute]rias oscila\[CCedilla]\[OTilde]es de diferentes modos confinados em \
+uma cavidade (explicando a Cat\[AAcute]strofe do Ultravioleta). Albert \
+Einstein interpretou essa quantiza\[CCedilla]\[ATilde]o como \
+part\[IAcute]culas sem massa chamadas f\[OAcute]tons e utilizou essas novas \
 descobertas para determinar seus Coeficientes, al\[EAcute]m do famoso Efeito \
 Fotoel\[EAcute]trico. Com este novo formalismo, podemos usar os operadores de \
 Aniquila\[CCedilla]\[ATilde]o e Cria\[CCedilla]\[ATilde]o em modos de energia \
@@ -86,8 +86,8 @@ Aniquila\[CCedilla]\[ATilde]o e Cria\[CCedilla]\[ATilde]o em modos de energia \
    3.9433702273738413`*^9, 3.943370229503652*^9}, 3.943370445303356*^9, {
    3.9433706023002577`*^9, 3.943370609636723*^9}, {3.943438371013134*^9, 
    3.943438372683576*^9}, 3.9451948723463497`*^9, 3.9451967118255253`*^9, 
-   3.9451974467210913`*^9},ExpressionUUID->"267adee1-7536-4a91-96a6-\
-ca508b013202"],
+   3.9451974467210913`*^9, {3.945242796197562*^9, 3.945242797140233*^9}},
+ TextJustification->1.,ExpressionUUID->"267adee1-7536-4a91-96a6-ca508b013202"],
 
 Cell["\<\
 \tNo mesmo s\[EAcute]culo, tamb\[EAcute]m houve enormes avan\[CCedilla]os na \
@@ -105,14 +105,22 @@ invariantes sob todas essas transforma\[CCedilla]\[OTilde]es, sejam cont\
 \>", "Text",
  CellChangeTimes->{
   3.943438379026802*^9, 3.945194870420659*^9, {3.9451967225293217`*^9, 
-   3.9451967229584503`*^9}},ExpressionUUID->"80ec82e1-1da3-429b-8006-\
-b5aa94139ef6"],
+   3.9451967229584503`*^9}},
+ TextJustification->1.,ExpressionUUID->"80ec82e1-1da3-429b-8006-b5aa94139ef6"],
 
-Cell["\tHoje em dia,", "Text",
+Cell["\<\
+\tHoje em dia, a humanidade j\[AAcute] foi capaz de conciliar ambas as \
+teorias na ent\[ATilde]o chamada de Teoria Qu\[AHat]ntica de Campos, onde, \
+diferente da mec\[AHat]nica qu\[AHat]ntica usual, a quantidade de part\
+\[IAcute]culas do sistema pode ser modificada ao longo dos processos, sendo \
+assim a base para diversos sistemas e \[AAcute]reas, como o estudo da Mat\
+\[EAcute]ria Condensada e a F\[IAcute]sica de Part\[IAcute]culas em si.\
+\>", "Text",
  CellChangeTimes->{{3.943438510900124*^9, 3.943438527402483*^9}, 
-   3.945194874203877*^9, {3.945196726309174*^9, 
-   3.945196729997548*^9}},ExpressionUUID->"bf0a8864-06e8-49e7-8b0c-\
-90d16218aaf0"]
+   3.945194874203877*^9, {3.945196726309174*^9, 3.945196729997548*^9}, {
+   3.945242785230053*^9, 3.9452427880431547`*^9}, {3.9452428308429947`*^9, 
+   3.945242837683853*^9}, {3.94524293374135*^9, 3.945242995613042*^9}},
+ TextJustification->1.,ExpressionUUID->"bf0a8864-06e8-49e7-8b0c-90d16218aaf0"]
 }, Open  ]],
 
 Cell[CellGroupData[{
@@ -122,13 +130,6 @@ Cell["Formalismo R\[AAcute]pido", "Section",
   3.945194848066821*^9, 3.9451948487346478`*^9}, {3.945196738585181*^9, 
   3.945196740587214*^9}},ExpressionUUID->"3561ba04-af7e-41fe-849d-\
 81630957b85e"],
-
-Cell["\tTomando a solu\[CCedilla]\[ATilde]o cl\[AAcute]ssica de onda", "Text",
- CellChangeTimes->{{3.943370651929491*^9, 3.943370675426572*^9}, {
-   3.943378151691581*^9, 3.9433781561149073`*^9}, 3.9451948607101803`*^9, {
-   3.9451967491811457`*^9, 
-   3.9451967498477373`*^9}},ExpressionUUID->"c8cfbc18-8d17-43ad-a8e0-\
-b0788be6d98c"],
 
 Cell["\<\
 \tFalando propriamente sobre nossa teoria, \[EAcute] necess\[AAcute]rio \
@@ -322,7 +323,7 @@ usOgjOgJERMl4Q5lNOrnCUiU7FAUjUAgEAgEAoFAIF4l/wDy2RTu
  TextAlignment->Center,ExpressionUUID->"742adce4-a4b4-476d-80ca-74e25c90122d"],
 
 Cell[TextData[{
- "Definimos que ",
+ "definimos que ",
  StyleBox["n",
   FontWeight->"Bold",
   FontSlant->"Italic"],
@@ -335,13 +336,15 @@ Cell[TextData[{
   FontWeight->"Bold",
   FontSlant->"Italic"],
  " part\[IAcute]culas, tamb\[EAcute]m chamado de espa\[CCedilla]o de Fock, \
-permitindo agora a introdu\[CCedilla]\[ATilde]o de Campos Escalares \
-Qu\[AHat]nticos:"
+permitindo agora a introdu\[CCedilla]\[ATilde]o de ",
+ StyleBox["Campos Escalares Qu\[AHat]nticos",
+  FontSlant->"Italic"],
+ ":"
 }], "Text",
  CellChangeTimes->{{3.9434394836086273`*^9, 3.9434394883718576`*^9}, {
   3.943442180198085*^9, 3.9434421911140947`*^9}, {3.9451967687572308`*^9, 
-  3.945196787027113*^9}},ExpressionUUID->"6b873741-2a8d-403c-a437-\
-42e90600cc4f"],
+  3.945196787027113*^9}, {3.9452456978520317`*^9, 3.945245697949959*^9}},
+ TextJustification->1.,ExpressionUUID->"6b873741-2a8d-403c-a437-42e90600cc4f"],
 
 Cell[BoxData[
  RowBox[{
@@ -1412,14 +1415,65 @@ CfU/vYHnsQ==
    3.943442070954129*^9}},
  TextAlignment->Center,ExpressionUUID->"668cd8e0-3687-4fdd-9bca-6fb8c510bbeb"],
 
-Cell["e assim eles podem ser vistos como...", "Text",
+Cell[TextData[{
+ "que s\[ATilde]o solu\[CCedilla]\[OTilde]es da equa\[CCedilla]\[ATilde]o de \
+Klein-Gordon e portanto podem ser decompostos em ondas planas. Processos \
+semelhantes se aplicam em ",
+ StyleBox["Campos Spinoriais",
+  FontSlant->"Italic"],
+ ", o que demanda um aprofundamento no estudo das representa\[CCedilla]\
+\[OTilde]es do ",
+ "Grupo de Poincar\[EAcute]",
+ StyleBox[" ISO(1,3)",
+  FontWeight->"Bold"],
+ " (possui rota\[CCedilla]\[OTilde]es, boosts de Lorentz, invers\[ATilde]o \
+temporal e por paridade) e sobre o que s\[ATilde]o spinores em si, e ",
+ StyleBox["Campos Tensoriais",
+  FontSlant->"Italic"],
+ ", como do f\[OAcute]ton e do hipot\[EAcute]tico gr\[AAcute]viton, que \
+exigem bases com ",
+ StyleBox["polariza\[CCedilla]\[OTilde]es",
+  FontSlant->"Italic"],
+ " para os \[IAcute]ndices."
+}], "Text",
  CellChangeTimes->{{3.943438257251183*^9, 3.9434382648965263`*^9}, {
    3.943439262855503*^9, 3.943439263959011*^9}, 3.943439337493855*^9, {
    3.943439652635754*^9, 3.943439653052279*^9}, {3.9451933468422737`*^9, 
    3.945193352536838*^9}, {3.9451967968198833`*^9, 3.945196797953485*^9}, {
-   3.9451970433225117`*^9, 
-   3.9451970443711023`*^9}},ExpressionUUID->"73a005ed-76e3-4b39-b62d-\
-5e0543a7e12b"]
+   3.9451970433225117`*^9, 3.9451970443711023`*^9}, {3.945245712419029*^9, 
+   3.9452457405294456`*^9}, {3.945246349207654*^9, 3.945246433150858*^9}, {
+   3.9452466701099253`*^9, 3.945246739925456*^9}, {3.9452470450829067`*^9, 
+   3.945247050072113*^9}},
+ TextJustification->1.,ExpressionUUID->"73a005ed-76e3-4b39-b62d-5e0543a7e12b"],
+
+Cell[TextData[{
+ "\t\[CapitalEAcute] poss\[IAcute]vel ent\[ATilde]o deduzir as Regras de \
+Feynman, tanto no ",
+ StyleBox["espa\[CCedilla]o de posi\[CCedilla]\[ATilde]o",
+  FontSlant->"Italic"],
+ " quanto de ",
+ StyleBox["momento",
+  FontSlant->"Italic"],
+ ", que ajudam durante o formalismo de Diagramas de Feynman, estes sendo \
+representa\[CCedilla]\[OTilde]es das s\[EAcute]ries perturbativas que surgem \
+ao calcular as fun\[CCedilla]\[OTilde]es entre n-pontos de teorias \
+interagentes."
+}], "Text",
+ CellChangeTimes->{{3.945246765638229*^9, 3.945246833997815*^9}, {
+  3.945246891114421*^9, 3.94524693133083*^9}, {3.945247005819491*^9, 
+  3.945247020342008*^9}},
+ TextJustification->1.,ExpressionUUID->"22a7879a-d979-434d-8f12-4107d3fc1b1b"],
+
+Cell[TextData[{
+ "\tAl\[EAcute]m disso, \[EAcute] chegado um momento em que \[EAcute] necess\
+\[AAcute]rio estudar o processo de ",
+ StyleBox["Renormaliza\[CCedilla]\[ATilde]o",
+  FontSlant->"Italic"],
+ " de teorias"
+}], "Text",
+ CellChangeTimes->{{3.945247065192157*^9, 
+  3.9452470930344267`*^9}},ExpressionUUID->"65d33c01-5787-41cd-b672-\
+3cb9de20f967"]
 }, Open  ]]
 }, Open  ]],
 
@@ -1448,8 +1502,9 @@ Cell[TextData[{
 \[EAcute] aqui. Tomando o famoso ",
  StyleBox["Espalhamento de M\[OSlash]ller",
   FontSlant->"Italic"],
- ", algo extremamente natural na eletrodin\[AHat]mica, onde dois \
-el\[EAcute]trons se aproximam e se repelem ao trocar um f\[OAcute]ton, ",
+ ", algo extremamente natural na eletrodin\[AHat]mica qu\[AHat]ntica escalar, \
+onde dois el\[EAcute]trons se aproximam e se repelem ao trocar um \
+f\[OAcute]ton, ",
  Cell[BoxData[
   GraphicsBox[
    TagBox[RasterBox[CompressedData["
@@ -1479,7 +1534,13 @@ fNkrWhdOivYszY7jcr3Yw/GcOmNc4RjL4/FEyDQgUH2R
    PlotRange->{{0, 83.23959505061868}, {0, 13.498312710911136`}}]], "Input",
   ExpressionUUID->"13dbb421-8f85-4024-b468-227dc61ffa71"],
  ". Pela Lagrangiana, nota-se que os diagramas poss\[IAcute]veis s\[ATilde]o \
-o canal t e u"
+o ",
+ StyleBox["canal-t",
+  FontSlant->"Italic"],
+ " e ",
+ StyleBox["canal-u",
+  FontSlant->"Italic"],
+ ", "
 }], "Text",
  CellChangeTimes->{{3.9433608562962017`*^9, 3.943360861176344*^9}, {
   3.945194877281617*^9, 3.9451948912866907`*^9}, {3.945196822059737*^9, 
@@ -1488,8 +1549,9 @@ o canal t e u"
   3.945197154202964*^9}, {3.945197464985662*^9, 3.9451974713745604`*^9}, {
   3.9451975148951283`*^9, 3.945197564180298*^9}, {3.9451980340536118`*^9, 
   3.945198079490687*^9}, {3.945200114176958*^9, 3.945200120238317*^9}, {
-  3.9452002404929457`*^9, 
-  3.945200262216277*^9}},ExpressionUUID->"8a74339c-82e8-4e46-bcfa-\
+  3.9452002404929457`*^9, 3.945200262216277*^9}, {3.94524709974678*^9, 
+  3.945247110802044*^9}, {3.9452477854930983`*^9, 
+  3.945247788525297*^9}},ExpressionUUID->"8a74339c-82e8-4e46-bcfa-\
 aa92cd089dd4"]
 }, Open  ]]
 }, Open  ]]
@@ -1525,25 +1587,26 @@ Cell[CellGroupData[{
 Cell[1711, 51, 456, 9, 78, "Chapter",ExpressionUUID->"24b2df57-03ed-494c-a0f9-beb39b74c914"],
 Cell[CellGroupData[{
 Cell[2192, 64, 199, 4, 65, "Section",ExpressionUUID->"65b95fd4-088d-465a-8463-6f46b253a928"],
-Cell[2394, 70, 1262, 19, 121, "Text",ExpressionUUID->"267adee1-7536-4a91-96a6-ca508b013202"],
-Cell[3659, 91, 1071, 17, 143, "Text",ExpressionUUID->"80ec82e1-1da3-429b-8006-b5aa94139ef6"],
-Cell[4733, 110, 229, 4, 33, "Text",ExpressionUUID->"bf0a8864-06e8-49e7-8b0c-90d16218aaf0"]
+Cell[2394, 70, 1320, 19, 121, "Text",ExpressionUUID->"267adee1-7536-4a91-96a6-ca508b013202"],
+Cell[3717, 91, 1093, 17, 143, "Text",ExpressionUUID->"80ec82e1-1da3-429b-8006-b5aa94139ef6"],
+Cell[4813, 110, 836, 12, 77, "Text",ExpressionUUID->"bf0a8864-06e8-49e7-8b0c-90d16218aaf0"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[4999, 119, 269, 4, 65, "Section",ExpressionUUID->"3561ba04-af7e-41fe-849d-81630957b85e"],
-Cell[5271, 125, 335, 5, 33, "Text",ExpressionUUID->"c8cfbc18-8d17-43ad-a8e0-b0788be6d98c"],
-Cell[5609, 132, 1201, 18, 77, "Text",ExpressionUUID->"7391b587-b9e8-4e4c-a648-42fa7c265946"],
-Cell[6813, 152, 9702, 169, 61, "Text",ExpressionUUID->"742adce4-a4b4-476d-80ca-74e25c90122d"],
-Cell[16518, 323, 768, 20, 55, "Text",ExpressionUUID->"6b873741-2a8d-403c-a437-42e90600cc4f"],
-Cell[17289, 345, 64602, 1067, 68, "Text",ExpressionUUID->"668cd8e0-3687-4fdd-9bca-6fb8c510bbeb"],
-Cell[81894, 1414, 458, 7, 33, "Text",ExpressionUUID->"73a005ed-76e3-4b39-b62d-5e0543a7e12b"]
+Cell[5686, 127, 269, 4, 65, "Section",ExpressionUUID->"3561ba04-af7e-41fe-849d-81630957b85e"],
+Cell[5958, 133, 1201, 18, 77, "Text",ExpressionUUID->"7391b587-b9e8-4e4c-a648-42fa7c265946"],
+Cell[7162, 153, 9702, 169, 61, "Text",ExpressionUUID->"742adce4-a4b4-476d-80ca-74e25c90122d"],
+Cell[16867, 324, 879, 22, 55, "Text",ExpressionUUID->"6b873741-2a8d-403c-a437-42e90600cc4f"],
+Cell[17749, 348, 64602, 1067, 68, "Text",ExpressionUUID->"668cd8e0-3687-4fdd-9bca-6fb8c510bbeb"],
+Cell[82354, 1417, 1452, 29, 99, "Text",ExpressionUUID->"73a005ed-76e3-4b39-b62d-5e0543a7e12b"],
+Cell[83809, 1448, 747, 16, 77, "Text",ExpressionUUID->"22a7879a-d979-434d-8f12-4107d3fc1b1b"],
+Cell[84559, 1466, 356, 9, 33, "Text",ExpressionUUID->"65d33c01-5787-41cd-b672-3cb9de20f967"]
 }, Open  ]]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[82401, 1427, 384, 7, 78, "Chapter",ExpressionUUID->"c2f4132c-fcbf-4945-8818-f2b490e39cd7"],
+Cell[84964, 1481, 384, 7, 78, "Chapter",ExpressionUUID->"c2f4132c-fcbf-4945-8818-f2b490e39cd7"],
 Cell[CellGroupData[{
-Cell[82810, 1438, 224, 4, 65, "Section",ExpressionUUID->"bd9c4a48-ac6f-4462-8274-3bc0cf24e4a5"],
-Cell[83037, 1444, 2568, 48, 77, "Text",ExpressionUUID->"8a74339c-82e8-4e46-bcfa-aa92cd089dd4"]
+Cell[85373, 1492, 224, 4, 65, "Section",ExpressionUUID->"bd9c4a48-ac6f-4462-8274-3bc0cf24e4a5"],
+Cell[85600, 1498, 2783, 56, 77, "Text",ExpressionUUID->"8a74339c-82e8-4e46-bcfa-aa92cd089dd4"]
 }, Open  ]]
 }, Open  ]]
 }, Open  ]]
