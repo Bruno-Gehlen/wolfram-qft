@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       154,          7]
-NotebookDataLength[     90903,       1608]
-NotebookOptionsPosition[     88423,       1559]
-NotebookOutlinePosition[     89041,       1580]
-CellTagsIndexPosition[     88998,       1577]
+NotebookDataLength[     92884,       1639]
+NotebookOptionsPosition[     90401,       1590]
+NotebookOutlinePosition[     91019,       1611]
+CellTagsIndexPosition[     90976,       1608]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -77,16 +77,18 @@ uma cavidade (explicando a Cat\[AAcute]strofe do Ultravioleta). Albert \
 Einstein interpretou essa quantiza\[CCedilla]\[ATilde]o como \
 part\[IAcute]culas sem massa chamadas f\[OAcute]tons e utilizou essas novas \
 descobertas para determinar seus Coeficientes, al\[EAcute]m do famoso Efeito \
-Fotoel\[EAcute]trico. Com este novo formalismo, podemos usar os operadores de \
-Aniquila\[CCedilla]\[ATilde]o e Cria\[CCedilla]\[ATilde]o em modos de energia \
-(ou momento) e at\[EAcute] mesmo encontrar a Taxa de Transi\[CCedilla]\
-\[ATilde]o entre esses estados.\
+Fotoel\[EAcute]trico. Com este novo formalismo, \[EAcute] poss\[IAcute]vel \
+utilizar os operadores de Aniquila\[CCedilla]\[ATilde]o e Cria\[CCedilla]\
+\[ATilde]o em modos de energia (ou momento) e at\[EAcute] mesmo encontrar a \
+Taxa de Transi\[CCedilla]\[ATilde]o entre diferentes estados qu\[AHat]nticos.\
+\
 \>", "Text",
  CellChangeTimes->{{3.94336925103164*^9, 3.943369257507009*^9}, {
    3.9433702273738413`*^9, 3.943370229503652*^9}, 3.943370445303356*^9, {
    3.9433706023002577`*^9, 3.943370609636723*^9}, {3.943438371013134*^9, 
    3.943438372683576*^9}, 3.9451948723463497`*^9, 3.9451967118255253`*^9, 
-   3.9451974467210913`*^9, {3.945242796197562*^9, 3.945242797140233*^9}},
+   3.9451974467210913`*^9, {3.945242796197562*^9, 3.945242797140233*^9}, {
+   3.9454209673468933`*^9, 3.945421004481324*^9}},
  TextJustification->1.,ExpressionUUID->"267adee1-7536-4a91-96a6-ca508b013202"],
 
 Cell["\<\
@@ -95,31 +97,51 @@ Cell["\<\
 a luz viaja a uma velocidade constante e, dependendo da velocidade do \
 observador, diferentes grandezas f\[IAcute]sicas podem ser medidas. \
 Descobriram-se observ\[AAcute]veis invariantes de Lorentz (sim\[EAcute]tricos \
-por todo o Grupo de Lorentz), pois j\[AAcute] se sabia que rota\[CCedilla]\
-\[OTilde]es mantinham normas inalteradas, e agora t\[IAcute]nhamos os Boosts \
-de Lorentz. Tamb\[EAcute]m foi descoberto que esses boosts se reduzem aos de \
-Galileu em baixas energias (validando ainda a f\[IAcute]sica cl\[AAcute]ssica \
-tradicional), e passamos a lidar com objetos como campos ou operadores \
-invariantes sob todas essas transforma\[CCedilla]\[OTilde]es, sejam cont\
-\[IAcute]nuas ou discretas.\
+por todo o Grupo de Poincar\[EAcute]), pois j\[AAcute] se sabia que rota\
+\[CCedilla]\[OTilde]es mantinham normas inalteradas, e agora haviam os Boosts \
+de Lorentz. Tamb\[EAcute]m foi descoberto que esses boosts se reduzem \
+\[AGrave]s transforma\[CCedilla]\[OTilde]es de referencial de Galileu no \
+regime das baixas energias (validando ainda a f\[IAcute]sica cl\[AAcute]ssica \
+tradicional), e ent\[ATilde]o passou-se a lidar com objetos traduzidos como \
+campos e operadores invariantes sob todas essas \
+transforma\[CCedilla]\[OTilde]es, sejam elas cont\[IAcute]nuas ou discretas \
+no universo.\
 \>", "Text",
  CellChangeTimes->{
   3.943438379026802*^9, 3.945194870420659*^9, {3.9451967225293217`*^9, 
-   3.9451967229584503`*^9}},
+   3.9451967229584503`*^9}, {3.945420931077943*^9, 3.94542095412191*^9}, {
+   3.945422557036201*^9, 3.945422599384403*^9}},
  TextJustification->1.,ExpressionUUID->"80ec82e1-1da3-429b-8006-b5aa94139ef6"],
 
-Cell["\<\
-\tHoje em dia, a humanidade j\[AAcute] foi capaz de conciliar ambas as \
-teorias na ent\[ATilde]o chamada de Teoria Qu\[AHat]ntica de Campos, onde, \
-diferente da mec\[AHat]nica qu\[AHat]ntica usual, a quantidade de part\
+Cell[TextData[{
+ "\tHoje em dia, a humanidade j\[AAcute] foi capaz de conciliar ambas as \
+teorias na ent\[ATilde]o chamada de Teoria Qu\[AHat]ntica de Campos (TQC), \
+onde, diferente da mec\[AHat]nica qu\[AHat]ntica usual, a quantidade de part\
 \[IAcute]culas do sistema pode ser modificada ao longo dos processos, sendo \
-assim a base para diversos sistemas e \[AAcute]reas, como o estudo da Mat\
-\[EAcute]ria Condensada e a F\[IAcute]sica de Part\[IAcute]culas em si.\
-\>", "Text",
+assim a base para diversos sistemas de diferentes \[AAcute]reas da \
+f\[IAcute]sica moderna, como o estudo da Mat\[EAcute]ria Condensada e a F\
+\[IAcute]sica de Part\[IAcute]culas em si. A maneira como a TQC \[EAcute] \
+constru\[IAcute]da permite que a matriz S (de espalhamento, \
+\[OpenCurlyDoubleQuote]scattering\[CloseCurlyDoubleQuote]) seja utilizada de \
+forma que, tomando que as intera\[CCedilla]\[OTilde]es ocorram em um tempo \
+muito curto comparado o resto do espalhamento e tratando os campos como \
+operadores que criam e/ou aniquilam part\[IAcute]culas de certos estados, \
+\[EAcute] poss\[IAcute]vel descrever qualquer processo onde entrem ",
+ StyleBox["n",
+  FontSlant->"Italic"],
+ " part\[IAcute]culas e saiam ",
+ StyleBox["m",
+  FontSlant->"Italic"],
+ " outras."
+}], "Text",
  CellChangeTimes->{{3.943438510900124*^9, 3.943438527402483*^9}, 
    3.945194874203877*^9, {3.945196726309174*^9, 3.945196729997548*^9}, {
    3.945242785230053*^9, 3.9452427880431547`*^9}, {3.9452428308429947`*^9, 
-   3.945242837683853*^9}, {3.94524293374135*^9, 3.945242995613042*^9}},
+   3.945242837683853*^9}, {3.94524293374135*^9, 3.945242995613042*^9}, {
+   3.945420867342313*^9, 3.945420902971424*^9}, {3.945421008016582*^9, 
+   3.9454210273800383`*^9}, {3.945421419793016*^9, 3.945421441601125*^9}, 
+   3.945421580038433*^9, {3.945422507833641*^9, 3.9454225467624397`*^9}, {
+   3.9454226125526457`*^9, 3.945422638090027*^9}},
  TextJustification->1.,ExpressionUUID->"bf0a8864-06e8-49e7-8b0c-90d16218aaf0"]
 }, Open  ]],
 
@@ -135,12 +157,12 @@ Cell["\<\
 \tFalando propriamente sobre nossa teoria, \[EAcute] necess\[AAcute]rio \
 lembrar alguns aspectos b\[AAcute]sicos da Teoria Qu\[AHat]ntica de Campos. \
 Ap\[OAcute]s a chamada \[OpenCurlyDoubleQuote]segunda quantiza\[CCedilla]\
-\[ATilde]o\[CloseCurlyDoubleQuote], onde estabelecemos rela\[CCedilla]\
-\[OTilde]es de comuta\[CCedilla]\[ATilde]o locais (em tempos iguais) entre \
-nossos operadores de cria\[CCedilla]\[ATilde]o/aniquila\[CCedilla]\[ATilde]o \
-e a normaliza\[CCedilla]\[ATilde]o dos estados, tamb\[EAcute]m considerando a \
-a\[CCedilla]\[ATilde]o desses operadores em um estado de uma \
-part\[IAcute]cula:\
+\[ATilde]o\[CloseCurlyDoubleQuote], onde s\[ATilde]o estabelecidas as rela\
+\[CCedilla]\[OTilde]es de comuta\[CCedilla]\[ATilde]o locais (em tempos \
+iguais) entre os operadores de cria\[CCedilla]\[ATilde]o/aniquila\[CCedilla]\
+\[ATilde]o e a normaliza\[CCedilla]\[ATilde]o dos estados, al\[EAcute]m de \
+tamb\[EAcute]m definir a a\[CCedilla]\[ATilde]o desses operadores em um \
+estado de uma part\[IAcute]cula:\
 \>", "Text",
  CellChangeTimes->{{3.943366999302339*^9, 3.94336702738035*^9}, {
    3.943367103830516*^9, 3.943367149112849*^9}, 3.943367240778721*^9, {
@@ -148,7 +170,8 @@ part\[IAcute]cula:\
    3.943367457410123*^9}, {3.943367791236668*^9, 3.943367808215314*^9}, {
    3.943438205269706*^9, 3.943438225003501*^9}, {3.9434393474592524`*^9, 
    3.9434394927873707`*^9}, {3.943439687890579*^9, 3.943439808587431*^9}, 
-   3.945194862880582*^9, 3.945196760926836*^9},
+   3.945194862880582*^9, 3.945196760926836*^9, {3.945422652143358*^9, 
+   3.945422668582205*^9}},
  TextJustification->1.,ExpressionUUID->"7391b587-b9e8-4e4c-a648-42fa7c265946"],
 
 Cell[BoxData[
@@ -323,7 +346,7 @@ usOgjOgJERMl4Q5lNOrnCUiU7FAUjUAgEAgEAoFAIF4l/wDy2RTu
  TextAlignment->Center,ExpressionUUID->"742adce4-a4b4-476d-80ca-74e25c90122d"],
 
 Cell[TextData[{
- "definimos que ",
+ "define-se que ",
  StyleBox["n",
   FontWeight->"Bold",
   FontSlant->"Italic"],
@@ -343,7 +366,8 @@ permitindo agora a introdu\[CCedilla]\[ATilde]o de ",
 }], "Text",
  CellChangeTimes->{{3.9434394836086273`*^9, 3.9434394883718576`*^9}, {
   3.943442180198085*^9, 3.9434421911140947`*^9}, {3.9451967687572308`*^9, 
-  3.945196787027113*^9}, {3.9452456978520317`*^9, 3.945245697949959*^9}},
+  3.945196787027113*^9}, {3.9452456978520317`*^9, 3.945245697949959*^9}, {
+  3.9454226726007853`*^9, 3.945422673687014*^9}},
  TextJustification->1.,ExpressionUUID->"6b873741-2a8d-403c-a437-42e90600cc4f"],
 
 Cell[BoxData[
@@ -1421,9 +1445,8 @@ Klein-Gordon e portanto podem ser decompostos em ondas planas. Processos \
 semelhantes se aplicam em ",
  StyleBox["Campos Spinoriais",
   FontSlant->"Italic"],
- ", o que demanda um aprofundamento no estudo das representa\[CCedilla]\
-\[OTilde]es do ",
- "Grupo de Poincar\[EAcute]",
+ " (que descrevem f\[EAcute]rmions), o que demanda um aprofundamento no \
+estudo das representa\[CCedilla]\[OTilde]es do Grupo de Poincar\[EAcute]",
  StyleBox[" ISO(1,3)",
   FontWeight->"Bold"],
  " (possui rota\[CCedilla]\[OTilde]es, boosts de Lorentz, invers\[ATilde]o \
@@ -1434,7 +1457,8 @@ temporal e por paridade) e sobre o que s\[ATilde]o spinores em si, e ",
 exigem bases com ",
  StyleBox["polariza\[CCedilla]\[OTilde]es",
   FontSlant->"Italic"],
- " para os \[IAcute]ndices."
+ " para cada um dos \[IAcute]ndices do objeto, relacionados com spin inteiro \
+(b\[OAcute]sons)."
 }], "Text",
  CellChangeTimes->{{3.943438257251183*^9, 3.9434382648965263`*^9}, {
    3.943439262855503*^9, 3.943439263959011*^9}, 3.943439337493855*^9, {
@@ -1443,7 +1467,8 @@ exigem bases com ",
    3.9451970433225117`*^9, 3.9451970443711023`*^9}, {3.945245712419029*^9, 
    3.9452457405294456`*^9}, {3.945246349207654*^9, 3.945246433150858*^9}, {
    3.9452466701099253`*^9, 3.945246739925456*^9}, {3.9452470450829067`*^9, 
-   3.945247050072113*^9}},
+   3.945247050072113*^9}, {3.9454226901363373`*^9, 3.9454227686050158`*^9}, {
+   3.9454229323013783`*^9, 3.9454229453843927`*^9}},
  TextJustification->1.,ExpressionUUID->"73a005ed-76e3-4b39-b62d-5e0543a7e12b"],
 
 Cell[TextData[{
@@ -1454,14 +1479,20 @@ Feynman, tanto no ",
  " quanto de ",
  StyleBox["momento",
   FontSlant->"Italic"],
- ", que ajudam durante o formalismo de Diagramas de Feynman, estes sendo \
-representa\[CCedilla]\[OTilde]es das s\[EAcute]ries perturbativas que surgem \
-ao calcular as fun\[CCedilla]\[OTilde]es entre n-pontos de teorias \
-interagentes."
+ ", que ajudam durante o j\[AAcute] bem estabelecido formalismo de Diagramas \
+de Feynman, estes sendo representa\[CCedilla]\[OTilde]es das s\[EAcute]ries \
+perturbativas que surgem ao calcular as fun\[CCedilla]\[OTilde]es entre ",
+ StyleBox["n",
+  FontSlant->"Italic"],
+ "-pontos de teorias interagentes. Toda a ideia de diagramas e fun\[CCedilla]\
+\[OTilde]es de muitos pontos facilita os c\[AAcute]lculos pois basta que \
+todas as amplitudes (chance de um estado inicial chegar em um estado final) \
+que podem f\[IAcute]sicamente contribuir para o processo sejam somadas"
 }], "Text",
  CellChangeTimes->{{3.945246765638229*^9, 3.945246833997815*^9}, {
   3.945246891114421*^9, 3.94524693133083*^9}, {3.945247005819491*^9, 
-  3.945247020342008*^9}},
+  3.945247020342008*^9}, {3.945422780299396*^9, 3.945422799598473*^9}, {
+  3.945422965513741*^9, 3.9454230176486*^9}},
  TextJustification->1.,ExpressionUUID->"22a7879a-d979-434d-8f12-4107d3fc1b1b"],
 
 Cell[TextData[{
@@ -1587,26 +1618,26 @@ Cell[CellGroupData[{
 Cell[1711, 51, 456, 9, 78, "Chapter",ExpressionUUID->"24b2df57-03ed-494c-a0f9-beb39b74c914"],
 Cell[CellGroupData[{
 Cell[2192, 64, 199, 4, 65, "Section",ExpressionUUID->"65b95fd4-088d-465a-8463-6f46b253a928"],
-Cell[2394, 70, 1320, 19, 121, "Text",ExpressionUUID->"267adee1-7536-4a91-96a6-ca508b013202"],
-Cell[3717, 91, 1093, 17, 143, "Text",ExpressionUUID->"80ec82e1-1da3-429b-8006-b5aa94139ef6"],
-Cell[4813, 110, 836, 12, 77, "Text",ExpressionUUID->"bf0a8864-06e8-49e7-8b0c-90d16218aaf0"]
+Cell[2394, 70, 1418, 21, 121, "Text",ExpressionUUID->"267adee1-7536-4a91-96a6-ca508b013202"],
+Cell[3815, 93, 1299, 20, 143, "Text",ExpressionUUID->"80ec82e1-1da3-429b-8006-b5aa94139ef6"],
+Cell[5117, 115, 1756, 29, 143, "Text",ExpressionUUID->"bf0a8864-06e8-49e7-8b0c-90d16218aaf0"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[5686, 127, 269, 4, 65, "Section",ExpressionUUID->"3561ba04-af7e-41fe-849d-81630957b85e"],
-Cell[5958, 133, 1201, 18, 77, "Text",ExpressionUUID->"7391b587-b9e8-4e4c-a648-42fa7c265946"],
-Cell[7162, 153, 9702, 169, 61, "Text",ExpressionUUID->"742adce4-a4b4-476d-80ca-74e25c90122d"],
-Cell[16867, 324, 879, 22, 55, "Text",ExpressionUUID->"6b873741-2a8d-403c-a437-42e90600cc4f"],
-Cell[17749, 348, 64602, 1067, 68, "Text",ExpressionUUID->"668cd8e0-3687-4fdd-9bca-6fb8c510bbeb"],
-Cell[82354, 1417, 1452, 29, 99, "Text",ExpressionUUID->"73a005ed-76e3-4b39-b62d-5e0543a7e12b"],
-Cell[83809, 1448, 747, 16, 77, "Text",ExpressionUUID->"22a7879a-d979-434d-8f12-4107d3fc1b1b"],
-Cell[84559, 1466, 356, 9, 33, "Text",ExpressionUUID->"65d33c01-5787-41cd-b672-3cb9de20f967"]
+Cell[6910, 149, 269, 4, 65, "Section",ExpressionUUID->"3561ba04-af7e-41fe-849d-81630957b85e"],
+Cell[7182, 155, 1273, 19, 77, "Text",ExpressionUUID->"7391b587-b9e8-4e4c-a648-42fa7c265946"],
+Cell[8458, 176, 9702, 169, 61, "Text",ExpressionUUID->"742adce4-a4b4-476d-80ca-74e25c90122d"],
+Cell[18163, 347, 930, 23, 55, "Text",ExpressionUUID->"6b873741-2a8d-403c-a437-42e90600cc4f"],
+Cell[19096, 372, 64602, 1067, 68, "Text",ExpressionUUID->"668cd8e0-3687-4fdd-9bca-6fb8c510bbeb"],
+Cell[83701, 1441, 1653, 30, 99, "Text",ExpressionUUID->"73a005ed-76e3-4b39-b62d-5e0543a7e12b"],
+Cell[85357, 1473, 1177, 22, 99, "Text",ExpressionUUID->"22a7879a-d979-434d-8f12-4107d3fc1b1b"],
+Cell[86537, 1497, 356, 9, 33, "Text",ExpressionUUID->"65d33c01-5787-41cd-b672-3cb9de20f967"]
 }, Open  ]]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[84964, 1481, 384, 7, 78, "Chapter",ExpressionUUID->"c2f4132c-fcbf-4945-8818-f2b490e39cd7"],
+Cell[86942, 1512, 384, 7, 78, "Chapter",ExpressionUUID->"c2f4132c-fcbf-4945-8818-f2b490e39cd7"],
 Cell[CellGroupData[{
-Cell[85373, 1492, 224, 4, 65, "Section",ExpressionUUID->"bd9c4a48-ac6f-4462-8274-3bc0cf24e4a5"],
-Cell[85600, 1498, 2783, 56, 77, "Text",ExpressionUUID->"8a74339c-82e8-4e46-bcfa-aa92cd089dd4"]
+Cell[87351, 1523, 224, 4, 65, "Section",ExpressionUUID->"bd9c4a48-ac6f-4462-8274-3bc0cf24e4a5"],
+Cell[87578, 1529, 2783, 56, 77, "Text",ExpressionUUID->"8a74339c-82e8-4e46-bcfa-aa92cd089dd4"]
 }, Open  ]]
 }, Open  ]]
 }, Open  ]]

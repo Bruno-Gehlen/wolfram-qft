@@ -1,46 +1,46 @@
-## Exploring Particle Physics and Quantum Field Theory with Mathematica
+## Explorando Física de Partículas e Teoria Quântica de Campos com Mathematica
 
-This repository contains Wolfram Mathematica code developed during a research project on Particle Physics and Quantum Field Theory. The main goal is to provide undergraduate students with hands-on experience with advanced physics concepts, complementing traditional study with the creation of programs that perform relevant calculations and simulations.
+Este repositório contém o códigode  Wolfram Mathematica desenvolvido durante um projeto de pesquisa sobre Física de Partículas e Teoria Quântica de Campos. O objetivo principal é fornecer aos alunos de graduação experiência prática com conceitos avançados de física, complementando o estudo tradicional com a criação de programas que realizam cálculos e simulações relevantes.
 
-**Repository Contents:**
+**Conteúdo do Repositório:**
 
-* **Mathematica Programs:** Notebooks containing code for calculations, simulations, and demonstrations of key concepts in Particle Physics and Quantum Field Theory. My authorial program is called *"wolfrDemoQFT.nb"*, and there are also some inspirations (the other three programs).
-* **Documentation:** Detailed descriptions of each program, including usage instructions, explanations of the physical concepts addressed, and application examples.
-* **Additional Resources:** Links to supporting materials such as books, articles, and presentations that complement learning.
+* **Programas Mathematica:** Notebooks contendo código para cálculos, simulações e demonstrações de conceitos-chave em Física de Partículas e Teoria Quântica de Campos. Meu programa autoral é chamado *"wolfrDemoQFT.nb"*, e também há algumas inspirações (os outros três programas).
+* **Documentação:** Descrições detalhadas de cada programa, incluindo instruções de uso, explicações dos conceitos físicos abordados e exemplos de aplicação.
+* **Recursos Adicionais:** Links para materiais de apoio, como livros, artigos e apresentações que complementam o aprendizado.
 
-**Examples of Programs:**
+**Exemplos de programas:**
 
-* Calculation of cross sections for particle scattering.
-* Simulation of particle propagation in different fields.
-* Visualization of Feynman diagrams.
-* Calculation of path integrals.
+* Cálculo de seções transversais para espalhamento de partículas.
+* Simulação de propagação de partículas em diferentes campos.
+* Visualização de diagramas de Feynman.
+* Cálculo de integrais de caminho.
 
-**How to Use this Repository:**
+**Como usar este repositório:**
 
-1. **Download Wolfram Mathematica:** Make sure you have the software installed on your computer.
-2. **Clone the repository:** Use the `git clone` command to download the files to your local machine.
-3. **Explore the notebooks:** Open the `.nb` files in Mathematica and run the code.
-4. **Refer to the documentation:** Read the descriptions and instructions to understand the functionality of each program.
+1. **Baixe o Wolfram Mathematica:** Certifique-se de ter o software instalado no seu computador.
+2. **Clone o repositório:** Use o comando `git clone` para baixar os arquivos para sua máquina local.
+3. **Explore os notebooks:** Abra os arquivos `.nb` no Mathematica e execute o código.
+4. **Consulte a documentação:** Leia as descrições e instruções para entender a funcionalidade de cada programa.
 
-**Contributions:**
+**Contribuições:**
 
-Feel free to contribute to this project! If you find errors, have suggestions for improvements, or want to add new programs, submit a pull request.
+Sinta-se à vontade para contribuir com este projeto! Se você encontrar erros, tiver sugestões de melhorias ou quiser adicionar novos programas, envie uma solicitação de pull.
 
-**Target Audience:**
+**Público-alvo:**
 
-This repository is intended for undergraduate students in Physics, especially those interested in Particle Physics and Quantum Field Theory. The code and documentation have been designed to be accessible to students with basic knowledge of Mathematica and modern physics.
+Este repositório é destinado a estudantes de graduação em Física, especialmente aqueles interessados em Física de Partículas e Teoria Quântica de Campos. O código e a documentação foram projetados para serem acessíveis a estudantes com conhecimento básico de Mathematica e física moderna.
 
-**Project Objectives:**
+**Objetivos do projeto:**
 
-The objectives of this project are:
+Os objetivos deste projeto são:
 
-* **Facilitate understanding of complex concepts:** Through visualization and interaction with simulations.
-* **Encourage practical application of theory:** By implementing calculations and algorithms.
-* **Make learning more engaging:** Combining theoretical study with computational experimentation.
-* **Share knowledge:** Making programs and resources available to other students and the general public.
+* **Facilitar a compreensão de conceitos complexos:** Por meio da visualização e interação com simulações.
+* **Incentivar a aplicação prática da teoria:** Implementando cálculos e algoritmos.
+* **Tornar o aprendizado mais envolvente:** Combinar estudo teórico com experimentação computacional.
+* **Compartilhar conhecimento:** Disponibilizar programas e recursos para outros estudantes e o público em geral.
 
-**Observations:**
+**Observações:**
 
-* This repository is under constant development, with new programs and features being added periodically.
-* It is essential to have a solid foundation in Modern Physics and basic knowledge of Mathematica to make the most of this material.
-* We thank the authors of the books, articles and resources used as the basis for the development of this project.
+* Este repositório está em constante desenvolvimento, com novos programas e recursos sendo adicionados periodicamente.
+* É essencial ter uma base sólida em Física Moderna e conhecimento básico de Mathematica para aproveitar ao máximo este material.
+* Agradecemos aos autores dos livros, artigos e recursos usados como base para o desenvolvimento deste projeto.
