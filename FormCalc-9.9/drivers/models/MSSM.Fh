@@ -1,0 +1,104 @@
+* MSSM.Fh
+* declarations for MSSM.F
+* this file is part of FormCalc
+* last modified 6 Oct 19 th
+
+
+#ifndef USfC
+#define USfC(i,j,t,g) Conjugate(USf(i,j,t,g))
+#define UCSfC(i,j,t,g) Conjugate(UCSf(i,j,t,g))
+#define UUSfC(i,j,t,g) Conjugate(UUSf(i,j,t,g))
+#define USf2(i,j,t,g) Re(UCSf(i,j,t,g))
+#define VChaC(i,j) Conjugate(VCha(i,j))
+#define UChaC(i,j) Conjugate(UCha(i,j))
+#define ZNeuC(i,j) Conjugate(ZNeu(i,j))
+#define UHiggsC(i,j) Conjugate(UHiggs(i,j))
+#define ZHiggsC(i,j) Conjugate(ZHiggs(i,j))
+#define AfC(t,g1,g2) Conjugate(Af(t,g1,g2))
+#define Mino3C Conjugate(Mino3)
+#define MUEC Conjugate(MUE)
+#define SqrtEGlC Conjugate(SqrtEGl)
+#endif
+
+#include "SM.Fh"
+
+	ComplexType UCha(2,2), VCha(2,2), ZNeu(4,4)
+	ComplexType USf(2,2,4,3), UCSf(3,4,2:4,3), UUSf(3,4,2:4,3)
+	ComplexType XHiggs(3,3,2)
+	ComplexType Af(2:4,3,3), Xf(2:4,3), MUETB(2:4)
+	ComplexType Atau, At, Ab, MUE
+	ComplexType Mino1, Mino2, Mino3, SqrtEGl
+	RealType MCha(2), MCha2(2), MNeu(4), MNeu2(4)
+	RealType MSS(2,2:4,3), MSS2(2,2:4,3), DSf(2,4)
+	RealType MSf(2,4,3), MSf2(2,4,3), MSusy, MGl, MGl2
+	RealType MHiggs(4), MHiggs2(4), MHiggstree2(4)
+	RealType CB, SB, TB, CB2, SB2, TB2, C2B, S2B
+	RealType CA, SA, CA2, SA2, C2A, S2A
+	RealType CAB, SAB, CBA, SBA, CBA2, SBA2
+	RealType AlfasMT
+
+	common /mssmpara/ UCha, VCha, ZNeu
+	common /mssmpara/ USf, UCSf, UUSf
+	common /mssmpara/ XHiggs
+	common /mssmpara/ Af, Xf
+	common /mssmpara/ Atau, At, Ab, MUE, MUETB
+	common /mssmpara/ Mino1, Mino2, Mino3, SqrtEGl
+	common /mssmpara/ MCha, MCha2, MNeu, MNeu2
+	common /mssmpara/ MSS, MSS2, DSf
+	common /mssmpara/ MSf, MSf2, MSusy, MGl, MGl2
+	common /mssmpara/ MHiggs, MHiggs2, MHiggstree2
+	common /mssmpara/ CB, SB, TB, CB2, SB2, TB2, C2B, S2B
+	common /mssmpara/ CA, SA, CA2, SA2, C2A, S2A
+	common /mssmpara/ CAB, SAB, CBA, SBA, CBA2, SBA2
+	common /mssmpara/ AlfasMT
+
+	RealType Mh0, Mh02, MHH, MHH2, MA0, MA02, MHp, MHp2
+	equivalence (MHiggs(1), Mh0), (MHiggs2(1), Mh02)
+	equivalence (MHiggs(2), MHH), (MHiggs2(2), MHH2)
+	equivalence (MHiggs(3), MA0), (MHiggs2(3), MA02)
+	equivalence (MHiggs(4), MHp), (MHiggs2(4), MHp2)
+
+	RealType Mh0tree2, MHHtree2, MA0tree2, MHptree2
+	equivalence (MHiggstree2(1), Mh0tree2)
+	equivalence (MHiggstree2(2), MHHtree2)
+	equivalence (MHiggstree2(3), MA0tree2)
+	equivalence (MHiggstree2(4), MHptree2)
+
+	ComplexType UHiggs(3,3), ZHiggs(3,3)
+	equivalence (XHiggs(1,1,1), UHiggs)
+	equivalence (XHiggs(1,1,2), ZHiggs)
+
+	RealType ReImAtau(2), ReAtau, ImAtau
+	equivalence (Atau, ReImAtau)
+	equivalence (ReImAtau(1), ReAtau), (ReImAtau(2), ImAtau)
+
+	RealType ReImAt(2), ReAt, ImAt
+	equivalence (At, ReImAt)
+	equivalence (ReImAt(1), ReAt), (ReImAt(2), ImAt)
+
+	RealType ReImAb(2), ReAb, ImAb
+	equivalence (Ab, ReImAb)
+	equivalence (ReImAb(1), ReAb), (ReImAb(2), ImAb)
+
+	RealType ReImMUE(2), ReMUE, ImMUE
+	equivalence (MUE, ReImMUE)
+	equivalence (ReImMUE(1), ReMUE), (ReImMUE(2), ImMUE)
+
+	RealType ReImMino1(2), ReMino1, ImMino1
+	RealType M_1, ReM_1, ImM_1
+	equivalence (Mino1, M_1, ReImMino1)
+	equivalence (ReImMino1(1), ReMino1, ReM_1)
+	equivalence (ReImMino1(2), ImMino1, ImM_1)
+
+	RealType ReImMino2(2), ReMino2, ImMino2
+	RealType M_2, ReM_2, ImM_2
+	equivalence (Mino2, M_2, ReImMino2)
+	equivalence (ReImMino2(1), ReMino2, ReM_2)
+	equivalence (ReImMino2(2), ImMino2, ImM_2)
+
+	RealType ReImMino3(2), ReMino3, ImMino3
+	RealType M_3, ReM_3, ImM_3
+	equivalence (Mino3, M_3, ReImMino3)
+	equivalence (ReImMino3(1), ReMino3, ReM_3)
+	equivalence (ReImMino3(2), ImMino3, ImM_3)
+

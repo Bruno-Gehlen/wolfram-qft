@@ -1,0 +1,10 @@
+curl --location --remote-name --user-agent FeynInstall http://feynarts.de/FeynArts-3.11.tar.gz 2>&1
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100   329  100   329    0     0    459      0 --:--:-- --:--:-- --:--:--   458100   329  100   329    0     0    459      0 --:--:-- --:--:-- --:--:--   458
+  1 3072k    1 31943    0     0  18967      0  0:02:45  0:00:01  0:02:44 18967 14 3072k   14  437k    0     0   166k      0  0:00:18  0:00:02  0:00:16  429k 35 3072k   35 1085k    0     0   298k      0  0:00:10  0:00:03  0:00:07  538k 62 3072k   62 1906k    0     0   398k      0  0:00:07  0:00:04  0:00:03  605k 82 3072k   82 2531k    0     0   447k      0  0:00:06  0:00:05  0:00:01  630k100 3072k  100 3072k    0     0   472k      0  0:00:06  0:00:06 --:--:--  631k
+rm -fr FeynArts-3.11
+gunzip -c FeynArts-3.11.tar.gz | tar xf -
+rm -f FeynArts
+ln -s FeynArts-3.11 FeynArts
+rm -f FeynArts-3.11.tar.gz

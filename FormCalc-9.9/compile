@@ -1,0 +1,146 @@
+#! /bin/bash
+# compile script for the C programs used by FormCalc
+# last modified 6 Aug 21 th
+
+# If this compile script doesn't work on your system, check these things:
+#
+# a) You need gcc.  If that's not installed on your system, change all
+#    "gcc"s to "cc"s, but have your fingers crossed: not all ccs will
+#    compile MathLink programs without errors.  You may need to change
+#    CFLAGS to e.g. relax strict ANSI compliance.
+#
+# b) You need mcc.  mcc is a script which compiles MathLink programs.
+#    Such programs have the extension .tm.  If you have Mathematica,
+#    you should also have mcc.  If mcc is not on the path, specify it
+#    in the environment variable MCC, e.g.
+#    export MCC=/usr/local/Wolfram/Mathematica/m.n/Executables/mcc
+
+CC="${CC:-gcc}"
+
+CXX="${CXX:-g++}"
+
+MCC="${MCC:-mcc}"
+
+MATH="${MATH:-math}"
+
+CFLAGS="${CFLAGS:--O3 -fomit-frame-pointer -ffast-math -Wall -Wextra} $@"
+
+SRC="${SRC:-`dirname "$0"`}"
+
+os="`uname`"
+exe=
+test "${os::3}" = CYG && exe=.exe
+
+test -z "$DEST" && {
+  mathcmd="$MATH"
+  shopt -s nullglob
+  set --
+  case "$os" in
+  Darwin)
+	mathcmd=MathKernel
+	set -- /Applications/Mathematica*/Contents/MacOS \
+	       $HOME/Desktop/Mathematica*/Contents/MacOS ;;
+  CYG*)
+	exe=.exe
+	w64="`cygpath -u "${ProgramW6432:-/cygdrive/c/Program Files}"`"
+	w32="`cygpath -u "${PROGRAMFILES:-/cygdrive/c/Program Files (x86)}"`"
+	eval set -- `ls -tdQ {"$w64","$w32"}/"Wolfram Research"/Mathematica/*` ;;
+  esac
+  mathcmd="`IFS=:
+    PATH="$PATH:$*" which "$mathcmd"`"
+  test -z "$mathcmd" && {
+    echo "No 'math' command found" 1>&2
+    exit 1
+  }
+  [[ `"$mathcmd" -run 'Print[7 673, $SystemID]; Exit[]' < /dev/null` =~ 4711([^$'\r\n']*) ]] || {
+    echo "Cannot determine Mathematica's system ID using $mathcmd" 1>&2
+    exit 1
+  }
+
+  DEST="${BASH_REMATCH[1]}"
+}
+
+BIN="$DEST"
+case "$DEST" in
+Please)
+	cat << _EOF_
+I can't seem to run the Mathematica Kernel.
+
+Maybe you have a buggy Mathematica installation or you're
+out of licenses.
+
+Please make sure you can start the Mathematica Kernel without
+additional flags (such as -pwfile) and re-run $0.
+
+_EOF_
+	exit 1 ;;
+Linux-x86-64)
+	CFLAGS+=" -m64"	MCFLAGS+=" -b64";;
+MacOSX-x86-64 | MacOSX-ARM64)
+	CFLAGS+=" -m64"	MCFLAGS+=" -n";;
+Windows-x86-64)
+	MCFLAGS+=" -D__int64='long long int'"
+	${DLLTOOL:-dlltool} --help | grep x86-64 > /dev/null || BIN=Windows ;;
+esac
+
+test -d "$DEST" || mkdir "$DEST" || {
+  echo "Cannot create directory $DEST"
+  exit 1
+}
+
+echo "Compiling for system type $DEST"
+
+t="$SRC/drivers/tools"
+
+mcc="REALCC=\"$CC\" CC=\"$t/fcc\" \
+REALCXX=\"$CXX\" CXX=\"$t/f++\" \
+PATH=\""'$$PATH'":$t\" $MCC -st $MCFLAGS $CFLAGS"
+
+# Mma 5.1's mcc needs -lpthread for static linking
+mclibs="-lpthread"
+
+cc="$CC $CFLAGS"
+
+make -f - << _EOF_ || exit 1
+all: $DEST/tform$exe \
+  $DEST/ReadForm$exe $DEST/ToForm$exe \
+  $DEST/ToFortran$exe $DEST/ToC$exe \
+  $DEST/ReadData$exe $DEST/reorder$exe
+
+$DEST/tform$exe: $SRC/bin/$BIN/tform$exe
+	cp -p $SRC/bin/$BIN/* $DEST/
+
+$DEST/ReadForm$exe: $SRC/FormCalc/ReadForm.tm
+	$mcc -o $DEST/ReadForm$exe $SRC/FormCalc/ReadForm.tm $mclibs
+	-strip $DEST/ReadForm$exe
+
+$DEST/ToForm$exe: $SRC/FormCalc/ToForm.c
+	$cc -o $DEST/ToForm$exe $SRC/FormCalc/ToForm.c
+	-strip $DEST/ToForm$exe
+
+$DEST/ToFortran$exe: $SRC/FormCalc/ToFortran.c
+	$cc -o $DEST/ToFortran$exe $SRC/FormCalc/ToFortran.c
+	-strip $DEST/ToFortran$exe
+
+$DEST/ToC$exe: $SRC/FormCalc/ToC.c
+	$cc -o $DEST/ToC$exe $SRC/FormCalc/ToC.c
+	-strip $DEST/ToC$exe
+
+$DEST/ReadData$exe: $SRC/tools/ReadData.tm
+	$mcc -o $DEST/ReadData$exe $SRC/tools/ReadData.tm $mclibs
+	-strip $DEST/ReadData$exe
+
+$DEST/reorder$exe: $SRC/tools/reorder.c
+	$cc -o $DEST/reorder$exe $SRC/tools/reorder.c
+	-strip $DEST/reorder$exe
+_EOF_
+
+
+# Second, make the util library.
+
+cd "$DEST"
+
+trap "rm -f makefile" 0 1 2 3 15
+
+"../$SRC/drivers/configure" --make="util.a build clean"
+

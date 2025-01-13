@@ -1,0 +1,114 @@
+* MSSMFH.Fh
+* declarations for MSSMFH.F
+* this file is part of FormCalc
+* last modified 6 Oct 19 th
+
+
+#include "FHRecord.h"
+
+	RecordDecl(record)
+	common /rec/ record
+
+	RealType Alfa0
+	parameter (Alfa0 = 1/137.0359895D0)
+
+	ComplexType CKM(3,3)
+	RealType Mf(4,3), Mf2(4,3)
+	RealType MZ, MZ2, MW, MW2, MH, MH2, MBatMB
+	RealType CW, CW2, SW, SW2
+	RealType ELMZ, AlfaMZ, GF, AlfaGF, AlfasMZ
+	RealType EL, Alfa, Alfa2, GS, Alfas, Alfas2
+	RealType CKMlambda, CKMA, CKMrhobar, CKMetabar
+
+	common /smpara/ CKM
+	common /smpara/ Mf, Mf2
+	common /smpara/ MZ, MZ2, MW, MW2, MH, MH2, MBatMB
+	common /smpara/ CW, CW2, SW, SW2
+	common /smpara/ ELMZ, AlfaMZ, GF, AlfaGF, AlfasMZ
+	common /smpara/ EL, Alfa, Alfa2, GS, Alfas, Alfas2
+	common /smpara/ CKMlambda, CKMA, CKMrhobar, CKMetabar
+
+#ifndef CKMC
+#define CKMC(i,j) Conjugate(CKM(i,j))
+#endif
+
+	RealType ME, ME2, MM, MM2, ML, ML2
+	RealType MU, MU2, MC, MC2, MT, MT2
+	RealType MD, MD2, MS, MS2, MB, MB2
+	equivalence (Mf(2,1), ME), (Mf2(2,1), ME2)
+	equivalence (Mf(2,2), MM), (Mf2(2,2), MM2)
+	equivalence (Mf(2,3), ML), (Mf2(2,3), ML2)
+	equivalence (Mf(3,1), MU), (Mf2(3,1), MU2)
+	equivalence (Mf(3,2), MC), (Mf2(3,2), MC2)
+	equivalence (Mf(3,3), MT), (Mf2(3,3), MT2)
+	equivalence (Mf(4,1), MD), (Mf2(4,1), MD2)
+	equivalence (Mf(4,2), MS), (Mf2(4,2), MS2)
+	equivalence (Mf(4,3), MB), (Mf2(4,3), MB2)
+
+
+	ComplexType UCha(2,2), VCha(2,2), ZNeu(4,4), USf(2,2,5,3)
+	ComplexType MSS2(3,3,5), Afd(2:4,3), Kf(3,3,2:4)
+	ComplexType XHiggs(3,3,2)
+	ComplexType MUE, Mino1, Mino2, Mino3, SqrtEGl
+	RealType MCha(2), MCha2(2), MNeu(4), MNeu2(4)
+	RealType MSS(5,3), MSf(2,5,3), MSf2(2,5,3)
+	RealType MHiggs(4), MHiggs2(4), MHtree(4), MHtree2(4)
+	RealType MGl, MGl2
+	RealType CB, SB, TB, CB2, SB2, TB2, C2B, S2B
+	RealType CA, SA, CA2, SA2, C2A, S2A
+	RealType CAB, SAB, CBA, SBA, CBA2, SBA2, SAeff
+	integer fv
+
+	common /mssmpara/ UCha, VCha, ZNeu, USf
+	common /mssmpara/ MSS2, Afd, Kf
+	common /mssmpara/ XHiggs
+	common /mssmpara/ MUE, Mino1, Mino2, Mino3, SqrtEGl
+	common /mssmpara/ MCha, MCha2, MNeu, MNeu2
+	common /mssmpara/ MSS, MSf, MSf2
+	common /mssmpara/ MHiggs, MHiggs2, MHtree, MHtree2
+	common /mssmpara/ MGl, MGl2
+	common /mssmpara/ CB, SB, TB, CB2, SB2, TB2, C2B, S2B
+	common /mssmpara/ CA, SA, CA2, SA2, C2A, S2A
+	common /mssmpara/ CAB, SAB, CBA, SBA, CBA2, SBA2, SAeff
+	common /mssmpara/ fv
+
+#ifndef USfC
+#define USfC(i,j,t,g) Conjugate(USf(i,j,t,g))
+
+#define VChaC(i,j) Conjugate(VCha(i,j))
+#define UChaC(i,j) Conjugate(UCha(i,j))
+#define ZNeuC(i,j) Conjugate(ZNeu(i,j))
+
+#define UHiggsC(i,j) Conjugate(UHiggs(i,j))
+#define ZHiggsC(i,j) Conjugate(ZHiggs(i,j))
+
+#define Af(t,g1,g2) Kf(g1,g2,t)/Mf(t,g1)
+#define AfC(t,g1,g2) Conjugate(Af(t,g1,g2))
+#define KfC(g1,g2,t) Conjugate(Kf(g1,g2,t))
+#define Mino3C Conjugate(Mino3)
+#define MUEC Conjugate(MUE)
+#define SqrtEGlC Conjugate(SqrtEGl)
+#endif
+
+	RealType Mh0, Mh02, MHH, MHH2, MA0, MA02, MHp, MHp2
+	equivalence (MHiggs(1), Mh0), (MHiggs2(1), Mh02)
+	equivalence (MHiggs(2), MHH), (MHiggs2(2), MHH2)
+	equivalence (MHiggs(3), MA0), (MHiggs2(3), MA02)
+	equivalence (MHiggs(4), MHp), (MHiggs2(4), MHp2)
+
+	RealType Mh0tree, Mh0tree2, MHHtree, MHHtree2
+	RealType MA0tree, MA0tree2, MHptree, MHptree2
+	equivalence (MHtree(1), Mh0tree), (MHtree2(1), Mh0tree2)
+	equivalence (MHtree(2), MHHtree), (MHtree2(2), MHHtree2)
+	equivalence (MHtree(3), MA0tree), (MHtree2(3), MA0tree2)
+	equivalence (MHtree(4), MHptree), (MHtree2(4), MHptree2)
+
+	ComplexType UHiggs(3,3), ZHiggs(3,3)
+	equivalence (XHiggs(1,1,1), UHiggs)
+	equivalence (XHiggs(1,1,2), ZHiggs)
+
+	ComplexType Atau, At, Ab
+	equivalence (Afd(2,3), Atau)
+	equivalence (Afd(3,3), At)
+	equivalence (Afd(4,3), Ab)
+

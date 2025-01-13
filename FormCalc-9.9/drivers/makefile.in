@@ -1,0 +1,97 @@
+# makefile.in
+# makefile template used by configure
+# this file is part of FormCalc
+# last modified 6 Oct 19 th
+
+# Note: make permanent changes only in makefile.in,
+# changes in makefile will be overwritten by configure.
+
+
+.PHONY: all build clean distclean
+
+MAKECMDGOALS ?= run
+
+MAKECMDGOALS := $(MAKECMDGOALS:%=%$(EXE))
+
+LEFTOVERS := $(wildcard [b]uild)
+
+all: $(LEFTOVERS) $(MAKECMDGOALS)
+
+AR = $(SRC)/tools/ar
+RANLIB = $(SRC)/tools/ranlib
+
+DIR = $(dir $(lastword $(MAKEFILE_LIST)))
+LIB = $(subst /,_,$(patsubst $(SRC)/%,%,$(DIR:/=))).a
+LIBS :=
+VPATH := .:$(SRC):$(SRC)/models:$(SRC)/include
+
+-include $(SRC)/renconst/*akefile
+
+-include $(SRC)/squaredme/*akefile $(SRC)/squaredme/*/*akefile
+
+CLEANLIBS := $(LIBS)
+
+-include $(SRC)/util/*akefile
+
+INCLUDE := $(patsubst %,-I%,$(subst :, ,$(VPATH):$(INCPATH)))
+FINCLUDE = -I$(SRC)/F $(INCLUDE)
+CINCLUDE = -I$(SRC)/C $(INCLUDE)
+
+DEB := $(if $(filter 0,$(DEBUG)),OPT,DEB)
+FFLAGS += $(FINCLUDE)
+CFLAGS += $(CINCLUDE)
+
+
+libs: $(LIBS)
+	$(RANLIB)
+
+build:
+	$(RANLIB)
+
+
+DEPS := $(wildcard *.d)
+
+clean:
+	$(RM) -r build
+	$(RM) $(DEPS) $(DEPS:%.d=%.tm) $(DEPS:%.d=%.tm.c) \
+	  $(DEPS:%.d=%.o) $(DEPS:%.d=%$(EXE)) $(CLEANLIBS) libs
+
+distclean: clean
+	$(RM) $(LIBS) makefile simd.h
+
+
+-include [FC]-squaredme.d
+-include [FC]-renconst.d
+
+F-%.d: deps-%.c
+	$(CPP) -MM $(FINCLUDE) $< | sed 's|^.*:|$@:|' > $@
+
+C-%.d: deps-%.c
+	$(CPP) -MM $(CINCLUDE) $< | sed 's|^.*:|$@:|' > $@
+
+
+-include $(MAKECMDGOALS:%$(EXE)=%.d)
+%.d: $(SRC)/%.F
+	{ grep "^[^c*].*Mma" $< >/dev/null 2>&1 ; \
+	  echo "MMA = $$?" ; \
+	  echo "$*$(EXE): $@ libs" ; \
+	  $(CPP) -M $(FINCLUDE) -x c $< | sed 's|^.*:|$@:|' ; \
+	} > $@
+
+PREFIX :=
+
+ifeq ($(MMA), 0)
+%$(EXE):: $(SRC)/%.F %.d $(SRC)/tools/mktm
+	$(FC) $(FFLAGS) -DMMA -DPREFIX=$(PREFIX) -E $< | $(SRC)/tools/mktm $*.tm
+	$(FC) $(FFLAGS) -DMMA -DPREFIX=$(PREFIX) -c $<
+	CC="$(SRC)/tools/fcc" REALCC="$(CC) $(CFLAGS)" \
+	CXX="$(SRC)/tools/f++" REALCXX="$(CXX) $(CXXFLAGS)" \
+	  PATH="$(PATH):$(SRC)/tools" \
+	  mcc $(MCFLAGS) -o $@ $*.tm $*.o $(LIBS) $(STDLIBS) $(LDFLAGS) $(MCLIBS)
+	-$(RM) $*.o $*.tm.c
+else
+%$(EXE):: $(SRC)/%.F %.d
+	$(FC) $(FFLAGS) -DPREFIX=$(PREFIX) -o $@ $< $(LIBS) $(STDLIBS)
+	-$(RM) $*.o
+endif
+

@@ -1,0 +1,11 @@
+curl --location --remote-name --user-agent FeynInstall http://feynarts.de/looptools/LoopTools-2.16.tar.gz 2>&1
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100   340  100   340    0     0    750      0 --:--:-- --:--:-- --:--:--   750
+  0     0    0     0    0     0      0      0 --:--:--  0:00:01 --:--:--     0 81  524k   81  429k    0     0   207k      0  0:00:02  0:00:02 --:--:--  458k100  524k  100  524k    0     0   232k      0  0:00:02  0:00:02 --:--:--  466k
+rm -fr LoopTools-2.16
+gunzip -c LoopTools-2.16.tar.gz | tar xf -
+(cd LoopTools-2.16 && ./configure && make default install clean) 2>&1
+looking for gcc... /usr/bin/gcc
+looking for g++... /usr/bin/g++
+looking for fortran... no ifort pgf90 xlf gfortran g95 f90 in your path
